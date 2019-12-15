@@ -4,34 +4,27 @@ a Node.JS/React/Redux app that represents art in a 3d graphical interface (d3.js
 # How to Run
 1. Pull down repo from Github
 2. in the terminal run:
-```
-npm install
-```
+	```
+	npm install
+	```
 
-to download all the dependencies
+	to download all the dependencies
 3. copy emailed creds.json into root directory
 4. makes sure postgres is installed locally and that it is running
 5. in the terminal run:  (need to implement command)
-```
-node data/init.js
-````
-
-to spin up local postgres database and tables for this app
-
+	```
+	node data/init.js
+	```
+	to spin up local postgres database and tables for this app
 6. Next we need to compile the ES7 code, run in the terminal:
-
-```
-npm run webpack
-```
-
+	```
+	npm run webpack
+	```
 	for debugging purposes use command ``` npm run webpack-watch ```
-which will recompile on detection of any file change.
+	which will recompile on detection of any file change.
+7. Once that successfully compiles the files into something the browser can understand, in the terminal we run: ``` npm start ```
+8. go to url `localhost:6660` in a web browers you'll see a home page explainging the api calls on this mini backend server
 
-7. Once that successfully compiles the files into something the browser can understand,
-in the terminal we run: ``` npm start ```
-
-7. go to url `localhost:6660` in a web browers
-	you'll see a home page explainging the api calls on this mini backend server
 
 
 #### to run ES7 code

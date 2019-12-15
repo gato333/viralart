@@ -15,12 +15,15 @@ body {
     display: block;
     position: fixed;
     .world {
-	    border-radius: 50%;
-	    background: #633eab;
-	    width: 80%;
-	    position: absolute;
-	    right: 0;
-	    margin-top: 100px;
+        border-radius: 50%;
+        background: url(/images/space.jpg) 0 0px;
+        background-size: 500px;
+        background-repeat: repeat;
+        width: 80%;
+        position: absolute;
+        right: 0;
+        margin-top: 100px;
+        box-shadow: #000000 0px 0px 67px 12px;
 	    &:before {
 	    	margin-top: 100%;
 	    	display: block;

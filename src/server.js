@@ -37,6 +37,7 @@ const validFiles = [ '/favicon.ico', '/main.js', '/main.js.map', '/styles.css',
 	'/styles.css.map', '/server.bundle.js.map', '/server.bundle.js'];
 
 app.get( "/*", (req, res) => {
-	if( validFiles.includes(req.url) ) return res.status(200).sendFile(path.join(__dirname + req.url))
+	if( validFiles.includes(req.url) || /.(jpg|png)$/.test(req.url) )
+		return res.status(200).sendFile(path.join(__dirname + req.url))
 	else return res.status(404).send('404: Not Found')
 });

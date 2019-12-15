@@ -1,0 +1,2330 @@
+{
+  "data": {
+    "popular_artists": {
+      "artists": [
+        {
+          "gender": null,
+          "bio": "Spanish, 1881-1973",
+          "name": "Pablo Picasso",
+          "birthday": "1881",
+          "deathday": "1973",
+          "artworks": [
+            {
+              "id": "pablo-picasso-la-vie-life",
+              "_id": "4f750af433b7a500010004c6",
+              "title": "La Vie [Life]",
+              "date": "1903",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "77 2/5 × 50 9/10 in",
+                "cm": "196.5 × 129.2 cm"
+              }
+            },
+            {
+              "id": "pablo-picasso-guernica",
+              "_id": "55ef2b547261693af00000ab",
+              "title": "Guernica",
+              "date": "1937",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "137 1/2 × 305 7/10 in",
+                "cm": "349.3 × 776.6 cm"
+              }
+            },
+            {
+              "id": "pablo-picasso-still-life-with-chair-caning",
+              "_id": "4f750b33653da10001000518",
+              "title": "Still-life with Chair Caning",
+              "date": "Spring 1912",
+              "medium": "Oil on oil-cloth over canvas edged with rope",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "11 2/5 × 14 3/5 in",
+                "cm": "29 × 37 cm"
+              }
+            },
+            {
+              "id": "pablo-picasso-daniel-henry-kahnweiler",
+              "_id": "537e69741a1e86510c000037",
+              "title": "Daniel-Henry Kahnweiler",
+              "date": "1910",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "39 1/2 × 28 1/2 in",
+                "cm": "100.4 × 72.4 cm"
+              }
+            },
+            {
+              "id": "pablo-picasso-pichet-tete-carree",
+              "_id": "58f6a5de8b0c143ab70b2830",
+              "title": "Pichet Tête Carrée",
+              "date": "1953",
+              "medium": "Ceramic",
+              "category": "Design/Decorative Art",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "5 1/4 in",
+                "cm": "13.3 cm"
+              }
+            },
+            {
+              "id": "pablo-picasso-cinesias-et-sa-myrrhine",
+              "_id": "5880de729c18db30cc001a9b",
+              "title": "Cinésias et sa Myrrhine",
+              "date": "1934",
+              "medium": "Original etching on BFK Rives paper",
+              "category": "Print",
+              "description": null,
+              "price": "$2,500 - 5,000",
+              "dimensions": {
+                "in": "8 1/8 × 5 1/2 in",
+                "cm": "20.6 × 14 cm"
+              }
+            },
+            {
+              "id": "pablo-picasso-violin-with-sheet-of-music",
+              "_id": "4f750b26653da1000100050e",
+              "title": "Violin with sheet of music",
+              "date": "Autumn-1912",
+              "medium": "Paper Collage",
+              "category": "Works on paper",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "pablo-picasso-peace-dove-slash-paloma-del-pace-slash-colombe-de-la-paix",
+              "_id": "5af41d248b3b8136993baf62",
+              "title": "Peace Dove / Paloma del Pace / Colombe de la Paix",
+              "date": "Dec 28-1961",
+              "medium": "Off Set Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "$5,000",
+              "dimensions": {
+                "in": "20 × 26 in",
+                "cm": "50.8 × 66 cm"
+              }
+            },
+            {
+              "id": "pablo-picasso-femme-au-mouchoir-1",
+              "_id": "5792600b2a893a5b1b001360",
+              "title": "Femme au Mouchoir",
+              "date": "1937",
+              "medium": "Lithograph on Arches paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "29 × 22 in",
+                "cm": "73.7 × 55.9 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "British",
+          "name": "Banksy",
+          "birthday": "",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "banksy-we-love-you-so-love-us",
+              "_id": "58e1a19d275b247d353ff0d9",
+              "title": "We Love You So Love Us",
+              "date": "2000",
+              "medium": "Vinyl record and cover",
+              "category": "Mixed Media",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "12 1/2 × 12 1/2 in",
+                "cm": "31.8 × 31.8 cm"
+              }
+            },
+            {
+              "id": "banksy-forgive-us-our-trespassing-41",
+              "_id": "59d6a85d8b3b815dbdbcba4d",
+              "title": "Forgive Us Our Trespassing",
+              "date": "2010",
+              "medium": "Offset lithograph",
+              "category": "Posters",
+              "description": "[Banksy](https://www.artsy.net/artist/banksy)’s career—filled with art world pranks and political activism—has produced a variety of posters showcasing the street artist’s wry sense of humor. Commissioned by Greenpeace to protest global deforestation, Banksy’s early poster _Save or Delete_ (2002) features blindfolded characters from Disney’s _The Jungle Book_ standing amidst a devastated landscape. In 2005, Banksy pranked The Museum of Modern Art by secretly installing a painting of a Tesco Value soup can (a spoof on [Andy Warhol](https://www.artsy.net/artist/andy-warhol)’s famous silkscreens of [Campbell’s Soup Cans](https://www.artsy.net/collection/andy-warhol-campbells-soup-can)) in one of its galleries—a hoax that went unnoticed by the museum’s staff for six days and inspired a series of Tesco Value soup can posters years later. Collectible Banksy posters also include promotional prints for his exhibition “Barely Legal” in 2006, his takeover of the Bristol Museum in 2009, the release of his film _Exit Through the Gift Shop_ in 2010, and his dystopian artist playground [Dismaland](https://www.artsy.net/collection/banksy-dismaland) in 2015.",
+              "price": "$1,350",
+              "dimensions": {
+                "in": "23 1/2 × 16 1/2 in",
+                "cm": "59.7 × 41.9 cm"
+              }
+            },
+            {
+              "id": "banksy-walled-off",
+              "_id": "5ab018c7139b216c8cb0eac9",
+              "title": "Walled off ",
+              "date": "2018",
+              "medium": "Piece of concrete",
+              "category": "Installation",
+              "description": null,
+              "price": "$2,000",
+              "dimensions": {
+                "in": "12 3/5 × 12 3/5 in",
+                "cm": "32 × 32 cm"
+              }
+            },
+            {
+              "id": "banksy-think-tank-13",
+              "_id": "59d6a884c9dc240f49917380",
+              "title": "Think Tank ",
+              "date": "2003",
+              "medium": "Offset lithograph",
+              "category": "Posters",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "60 × 40 in",
+                "cm": "152.4 × 101.6 cm"
+              }
+            },
+            {
+              "id": "banksy-monkey-parliament",
+              "_id": "5a9dcb9d2a893a556122c3c5",
+              "title": "Monkey Parliament",
+              "date": "2009",
+              "medium": "Offset lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "£1,000 - 2,500",
+              "dimensions": {
+                "in": "23 3/5 × 35 2/5 in",
+                "cm": "60 × 90 cm"
+              }
+            },
+            {
+              "id": "banksy-di-faced-tenner-75",
+              "_id": "59d6a85f9c18db2c7c165d51",
+              "title": "Di Faced Tenner",
+              "date": "2004",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "3 × 5 3/4 in",
+                "cm": "7.6 × 14.6 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, 1928-1987",
+          "name": "Andy Warhol",
+          "birthday": "1928",
+          "deathday": "1987",
+          "artworks": [
+            {
+              "id": "andy-warhol-soup-can-vegetarian-vegetable",
+              "_id": "50bf73bb5df6159235000701",
+              "title": "Soup Can, Vegetarian Vegetable",
+              "date": "1964",
+              "medium": "Silkscreen",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "32 × 18 3/4 in",
+                "cm": "81.3 × 47.6 cm"
+              }
+            },
+            {
+              "id": "andy-warhol-mao-106",
+              "_id": "537e5bc27622ddbb2f00017d",
+              "title": "Mao",
+              "date": "1973",
+              "medium": "Synthetic polymer paint and silkscreen ink on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "176 1/2 × 136 1/2 in",
+                "cm": "448.3 × 346.7 cm"
+              }
+            },
+            {
+              "id": "andy-warhol-chanel-no-5-1997",
+              "_id": "58e941cac9dc244018161428",
+              "title": "Chanel No. 5, 1997",
+              "date": "",
+              "medium": "Offset lithograph mounted on linen backing",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "29 × 22 in",
+                "cm": "73.7 × 55.9 cm"
+              }
+            },
+            {
+              "id": "andy-warhol-marilyn-33",
+              "_id": "5436c9967261690809c80200",
+              "title": "Marilyn",
+              "date": "1967",
+              "medium": "Screenprint on paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "36 × 36 in",
+                "cm": "91.4 × 91.4 cm"
+              }
+            },
+            {
+              "id": "andy-warhol-love-variants-1",
+              "_id": "585058d4cd530e374f0000bc",
+              "title": "Love Variants",
+              "date": "ca. 1983",
+              "medium": "Unique screenprint",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "30 1/2 × 21 1/2 in",
+                "cm": "77.5 × 54.6 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-warhol-slash-basquiat-paintings-poster-slash-invite-shafrazi-exhibition-nyc-post-marked",
+              "_id": "57684bddcd530e1381000180",
+              "title": "\"Warhol / Basquiat Paintings\", Poster/Invite, Shafrazi Exhibition NYC, POST MARKED",
+              "date": "1985",
+              "medium": "Offset Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "17 × 11 in",
+                "cm": "43.2 × 27.9 cm"
+              }
+            },
+            {
+              "id": "andy-warhol-fish-iii-dot-41",
+              "_id": "585058d89c18db731d0000a6",
+              "title": "Fish, III.41",
+              "date": "1983",
+              "medium": "Unique screenprint on Saunders Waterford (Hot Pressed) paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "43 1/4 × 30 1/2 in",
+                "cm": "109.9 × 77.5 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, 1960-1988",
+          "name": "Jean-Michel Basquiat",
+          "birthday": "1960",
+          "deathday": "1988",
+          "artworks": [
+            {
+              "id": "jean-michel-basquiat-six-crimee",
+              "_id": "4ed30533d0e5ec0001007b3b",
+              "title": "Six Crimee",
+              "date": "1982",
+              "medium": "Acrylic and oil paintstick on masonite",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "72 × 144 in",
+                "cm": "182.9 × 365.8 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-flexible-72",
+              "_id": "58211ef7b202a31dda0004e6",
+              "title": "Flexible",
+              "date": "1984",
+              "medium": "Screenprint",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "60 1/4 × 45 1/2 in",
+                "cm": "153 × 115.6 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-untitled",
+              "_id": "4fedd21764fa170001000870",
+              "title": "Untitled",
+              "date": "1981",
+              "medium": "Acrylic and mixed media on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "81 × 69 1/4 in",
+                "cm": "205.7 × 175.9 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-beat-bop",
+              "_id": "58fa30019c18db4a6de0f079",
+              "title": "Beat Bop",
+              "date": "ca. 2001",
+              "medium": "Offset print and vinyl record",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "12 × 12 in",
+                "cm": "30.5 × 30.5 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-untitled-high-school-sketch-book-page",
+              "_id": "5758a7f6cd530e2398000266",
+              "title": "\"Untitled\", High School Sketch Book Page",
+              "date": "1978",
+              "medium": "Ink on paper",
+              "category": "Drawing, Collage or other Work on Paper",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "12 × 16 in",
+                "cm": "30.5 × 40.6 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-bearbrick-400-percent-and-100-percent-1",
+              "_id": "5a9d74682a893a5561228f44",
+              "title": "Bearbrick 400% & 100%",
+              "date": "2017",
+              "medium": "Plastic",
+              "category": "Sculpture",
+              "description": null,
+              "price": "$800",
+              "dimensions": {
+                "in": "11 × 5 in",
+                "cm": "27.9 × 12.7 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-new-art-new-money-new-york-times-magazine-1",
+              "_id": "57e97c41cd530e48d100003e",
+              "title": "\"New Art. New Money\" New York Times Magazine.",
+              "date": "1985",
+              "medium": "",
+              "category": "Print",
+              "description": null,
+              "price": "$2,000",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-warhol-slash-basquiat-paintings-poster-slash-invite-shafrazi-exhibition-nyc-post-marked",
+              "_id": "57684bddcd530e1381000180",
+              "title": "\"Warhol / Basquiat Paintings\", Poster/Invite, Shafrazi Exhibition NYC, POST MARKED",
+              "date": "1985",
+              "medium": "Offset Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "17 × 11 in",
+                "cm": "43.2 × 27.9 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, 1923-1997",
+          "name": "Roy Lichtenstein",
+          "birthday": "1923",
+          "deathday": "1997",
+          "artworks": [
+            {
+              "id": "roy-lichtenstein-as-i-opened-fire-triptych-18",
+              "_id": "58e6fa987622dd03e0f93ec6",
+              "title": "As I Opened Fire Triptych",
+              "date": "1966-2000",
+              "medium": "Offset lithograph",
+              "category": "Print",
+              "description": "Over the course of his career, [Roy Lichtenstein](https://www.artsy.net/artist/roy-lichtenstein) designed 70 posters to promote music and film festivals, political campaigns, nonprofit organizations, his own exhibitions, and more. Released in 1962, Lichtenstein’s first poster depicts a series of shaking hands, which celebrated his inaugural exhibition at the influential Leo Castelli Gallery. Since the posters were folded and sent by mail, these early exhibition advertisements (or “mailers”) are creased at the centerfold—a remnant from this bygone era of gallery advertising. By the mid-1960s, Lichtenstein’s cartoon aesthetic turned him into a household name, and the Pop artist began receiving commissions from institutions across the country—from New York’s Lincoln Center to Hollywood’s 20th Century Fox—to design their posters as well. In later decades, Lichtenstein would go on to leverage his worldwide fame to champion humanitarian causes and political campaigns. For example, his poster _Oval Office_ (1992) was part of a fundraiser to support 10 female candidates running for the United States Senate.",
+              "price": "$1,850",
+              "dimensions": {
+                "in": "24 3/4 × 20 3/4 in",
+                "cm": "62.9 × 52.7 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-expressionist-head",
+              "_id": "52f3d404a09a67b94d00047c",
+              "title": "Expressionist Head",
+              "date": "1980",
+              "medium": "Painted Bronze",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "55 × 44 3/4 × 18 in",
+                "cm": "139.7 × 113.7 × 45.7 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-head-with-blue-shadow",
+              "_id": "53e3dd3572616914d1d50100",
+              "title": "Head with Blue Shadow",
+              "date": "1965",
+              "medium": "Painted ceramic",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "15 × 8 1/4 × 8 in",
+                "cm": "38.1 × 21 × 20.3 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-nude-with-blue-hair-state-i-1",
+              "_id": "541073c972616904aa9a0000",
+              "title": "Nude with Blue Hair, State I",
+              "date": "1994",
+              "medium": "Prints and Multiples, Screenprint in colors",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "52 × 31 69/100 in",
+                "cm": "132.1 × 80.5 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-portrait-of-a-woman",
+              "_id": "51eff2bc275b24cad0000505",
+              "title": "Portrait of a Woman",
+              "date": "1979",
+              "medium": "Oil and Magna on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "70 × 54 in",
+                "cm": "177.8 × 137.2 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-imperfect-painting",
+              "_id": "4d8b93544eb68a1b2c001391",
+              "title": "Imperfect Painting",
+              "date": "1987",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "32 3/4 × 27 in",
+                "cm": "83.2 × 68.6 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-brushstrokes-34",
+              "_id": "582a5965139b2111b6000425",
+              "title": "Brushstrokes",
+              "date": "1967",
+              "medium": "Screenprint on off-white wove paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "23 × 31 in",
+                "cm": "58.4 × 78.7 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-tintin-reading-2",
+              "_id": "5b50c2a7ca4365002401b776",
+              "title": "Tintin Reading",
+              "date": "1995",
+              "medium": "Offset Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "$450",
+              "dimensions": {
+                "in": "39 × 27 1/2 in",
+                "cm": "99.1 × 69.9 cm"
+              }
+            },
+            {
+              "id": "roy-lichtenstein-the-solomon-r-guggenheim-museum-poster-1",
+              "_id": "587046d3a09a67566a0030f9",
+              "title": "The Solomon R. Guggenheim Museum Poster",
+              "date": "1969",
+              "medium": "Screenprint on Rives paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "28 3/4 × 28 3/4 in",
+                "cm": "73 × 73 cm"
+              }
+            },
+            {
+              "id": "andy-warhol-twenty-years-1977-signed-slash-inscribed-by-leo-exhibition-catalogue-leo-castelli-gallery-1st-edition",
+              "_id": "5a33470d8b0c14665b377975",
+              "title": "\"Twenty Years\", 1977, SIGNED/Inscribed by Leo, Exhibition Catalogue, Leo Castelli Gallery, 1st Edition",
+              "date": "1977",
+              "medium": "Lithograph on paper.",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "11 × 9 in",
+                "cm": "27.9 × 22.9 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, 1958-1990",
+          "name": "Keith Haring",
+          "birthday": "1958",
+          "deathday": "1990",
+          "artworks": [
+            {
+              "id": "keith-haring-untitled-2336",
+              "_id": "58ee8ddf8b3b812e8c0b5950",
+              "title": "Untitled",
+              "date": "ca. 1993",
+              "medium": "Offset lithograph mounted on wood",
+              "category": "Print",
+              "description": null,
+              "price": "$1,850",
+              "dimensions": {
+                "in": "23 1/2 × 23 1/2 × 1 in",
+                "cm": "59.7 × 59.7 × 2.5 cm"
+              }
+            },
+            {
+              "id": "keith-haring-best-buddies-53",
+              "_id": "58ee8dc3a09a670f2ef8226f",
+              "title": "Best Buddies",
+              "date": "ca. 1993",
+              "medium": "Offset lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "$1,500",
+              "dimensions": {
+                "in": "23 1/2 × 23 1/2 × 1 in",
+                "cm": "59.7 × 59.7 × 2.5 cm"
+              }
+            },
+            {
+              "id": "jean-michel-basquiat-new-art-new-money-new-york-times-magazine-1",
+              "_id": "57e97c41cd530e48d100003e",
+              "title": "\"New Art. New Money\" New York Times Magazine.",
+              "date": "1985",
+              "medium": "",
+              "category": "Print",
+              "description": null,
+              "price": "$2,000",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "keith-haring-wedding-invitation",
+              "_id": "58ee8ddfb202a37c8e1065e0",
+              "title": "Wedding Invitation",
+              "date": "ca. 1993",
+              "medium": "Offset lithograph mounted on wood",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "23 1/2 × 23 1/2 in",
+                "cm": "59.7 × 59.7 cm"
+              }
+            },
+            {
+              "id": "keith-haring-keith-haring-83-1983-exhibition-poster-galerie-watari-tokyo",
+              "_id": "57c73c677622dd6594000168",
+              "title": "\"Keith Haring-83\", 1983, Exhibition Poster, Galerie Watari Tokyo ",
+              "date": "1983",
+              "medium": "Screenprint on pearl finish paper.",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "27 × 20 in",
+                "cm": "68.6 × 50.8 cm"
+              }
+            },
+            {
+              "id": "keith-haring-lucky-strike-iii",
+              "_id": "5a9d8aff139b212e56fe5bb1",
+              "title": "Lucky Strike III",
+              "date": "1987",
+              "medium": "Screenprint, Poster",
+              "category": "Posters",
+              "description": "In 1987, the cigarette company Lucky Strike commissioned Keith Haring to design a suite of advertisements for the brand. Haring created nine drawings for Lucky Strike, from which the company selected five to be printed as limited edition silkscreen prints. Three of the designs, featuring the street artist’s signature expressive lines and dancing figures, were also released as posters. To humor his friends, Haring also created a tenth sketch for Lucky Strike that depicted a smoking skeleton. The executives at Lucky Strike weren’t too happy about that rendition, Haring noted in his journal.",
+              "price": "$850",
+              "dimensions": {
+                "in": "39 1/2 × 27 1/2 in",
+                "cm": "100.3 × 69.9 cm"
+              }
+            },
+            {
+              "id": "keith-haring-schott-motorcycle-jacket-painting",
+              "_id": "578cf2288b3b812f7200337e",
+              "title": "Schott Motorcycle Jacket Painting",
+              "date": "1989",
+              "medium": "Painted Leather Jacket - Size 42",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "21 1/2 × 14 × 1 in",
+                "cm": "54.6 × 35.6 × 2.5 cm"
+              }
+            },
+            {
+              "id": "keith-haring-stones-3",
+              "_id": "5834a7b6275b242dfb000389",
+              "title": "Stones 3",
+              "date": "1989",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "30 × 22 1/4 in",
+                "cm": "76.2 × 56.5 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "British, 1909-1992",
+          "name": "Francis Bacon",
+          "birthday": "1909",
+          "deathday": "1992",
+          "artworks": [
+            {
+              "id": "francis-bacon-triptyque-1983-right-panel",
+              "_id": "587618d5c9dc242c2900089a",
+              "title": "Triptyque 1983 - Right Panel",
+              "date": "1983",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "33 9/10 × 23 4/5 in",
+                "cm": "86 × 60.5 cm"
+              }
+            },
+            {
+              "id": "francis-bacon-metropolitan-3",
+              "_id": "58263fe7275b24790b000af9",
+              "title": "Metropolitan",
+              "date": "1975",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "62 1/2 × 43 1/4 in",
+                "cm": "158.8 × 109.9 cm"
+              }
+            },
+            {
+              "id": "francis-bacon-self-portrait-7",
+              "_id": "58602a54a09a675200001448",
+              "title": "Self Portrait",
+              "date": "1977",
+              "medium": "Lithograph on Arches paper",
+              "category": "Print",
+              "description": null,
+              "price": "$28,000",
+              "dimensions": {
+                "in": "40 1/5 × 28 1/2 in",
+                "cm": "102 × 72.5 cm"
+              }
+            },
+            {
+              "id": "francis-bacon-august-triptych-right-panel",
+              "_id": "53cad9df7261692cc1180200",
+              "title": "August Triptych, Right Panel",
+              "date": "1972",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "25 1/2 × 19 in",
+                "cm": "64.8 × 48.3 cm"
+              }
+            },
+            {
+              "id": "francis-bacon-study-for-self-portrait-1984",
+              "_id": "5841a9f0cd530e0229000145",
+              "title": "Study for Self-Portrait",
+              "date": "1982",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "37 × 25 3/5 in",
+                "cm": "94 × 65 cm"
+              }
+            },
+            {
+              "id": "francis-bacon-2-signed-exhibition-pieces-francis-bacon-slash-peintures-recentes-gallerie-maeght-lelong-ex-jacob-baal-teshuva-collection",
+              "_id": "58c813ae7622dd50ef2ea6a4",
+              "title": "2-Signed Exhibition Pieces, \"Francis Bacon/Peintures Recentes\", Gallerie Maeght Lelong, Ex. Jacob Baal-Teshuva Collection",
+              "date": "1984",
+              "medium": "Ink on Paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "francis-bacon-study-for-a-portrait",
+              "_id": "572a0da9275b2468b500165b",
+              "title": "Study for a Portrait",
+              "date": "1952",
+              "medium": "Oil paint and sand on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "26 × 22 1/10 × 7/10 in",
+                "cm": "66.1 × 56.1 × 1.8 cm"
+              }
+            },
+            {
+              "id": "francis-bacon-self-portrait-3",
+              "_id": "58f8d9dd8b3b813376a3139d",
+              "title": "Self-portrait",
+              "date": "1977",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "33 3/10 × 24 4/5 in",
+                "cm": "84.5 × 63 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "British, born 1965",
+          "name": "Damien Hirst",
+          "birthday": "1965",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "damien-hirst-for-the-love-of-god-believe-5",
+              "_id": "58f0d762a09a673c2aa71723",
+              "title": "For the Love of God, Believe",
+              "date": "ca. 2007",
+              "medium": "Screenprint in colours on wove paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "12 9/10 × 9 1/2 in",
+                "cm": "32.7 × 24.2 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-away-from-the-flock",
+              "_id": "4feb7caa81f8f1000100007e",
+              "title": "Away from the Flock",
+              "date": "1994",
+              "medium": "Steel, glass, formaldehyde solution and lamb",
+              "category": "Mixed Media",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "37 3/4 × 58 5/8 × 20 in",
+                "cm": "95.9 × 148.9 × 50.8 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-the-cure-ice-pink-slash-mauve-slash-raspberry-2",
+              "_id": "5b1e8e1b275b243f5fd4158a",
+              "title": "The Cure - Ice Pink/Mauve/Raspberry",
+              "date": "2014",
+              "medium": "Silkscreen on Somerset Tub Sized 410gsm",
+              "category": "Print",
+              "description": "Famously obsessed with morbid subject matter, Damien Hirst first incorporated pharmaceuticals into his work in his 1980s “Medicine Cabinet” series, using old prescriptions found in the bathroom of his recently deceased grandmother. For this series, Hirst arranged the medicine according to their function on the human body—from migraine pills on the top shelf to foot cream on the bottom. In the years since, Hirst has made outsized sculptures of candy-colored pills and human-sized scalpels, as well as immersive installations that make the viewer feel like they’ve entered a working pharmacy. The works, which can be interpreted as a metaphor for the healing power of art, hold a special place in the artist’s heart. Perhaps most admired is _The Void_ (2000), a mammoth glass shelf containing single pills arranged in a perfect grid. “I think it’s like the best piece I've ever made,” Hirst [said](https://www.phillips.com/article/11599508/entering-the-void-hirsts-largest-pill-cabinet-exhibited-in-the-us) of the installation.",
+              "price": "$9,900",
+              "dimensions": {
+                "in": "34 × 26 × 2 in",
+                "cm": "86.4 × 66 × 5.1 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-spin-painting-2009-painting-requiem-at-the-pinchuk-art-centre-ukraine-collaboration",
+              "_id": "599772bec9dc243ba08a9539",
+              "title": "\"Spin Painting\", 2009, Painting, Requiem at the Pinchuk Art Centre Ukraine, Collaboration.",
+              "date": "2009",
+              "medium": "Acrylic on Paper",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "20 1/2 × 20 1/2 in",
+                "cm": "52 × 52 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-psalm-expectans-expectavi-2",
+              "_id": "589e03c39c18db49ab251e03",
+              "title": "PSALM: EXPECTANS EXPECTAVI",
+              "date": "2016",
+              "medium": "Screenprint in colors with glaze on stiff wove paper.",
+              "category": "Print",
+              "description": null,
+              "price": "$7,500 - 10,000",
+              "dimensions": {
+                "in": "18 × 18 in",
+                "cm": "45.7 × 45.7 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-where-theres-a-will-theres-a-way",
+              "_id": "53198ef0c9dc240ce6000111",
+              "title": "Where There's a Will, There's a Way",
+              "date": "",
+              "medium": "Glass, stainless steel, steel, aluminium, nickel, bismuth and cast resin, coloured plaster and painted pills with dry transfers",
+              "category": "Mixed Media",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "72 × 108 × 4 in",
+                "cm": "182.9 × 274.3 × 10.2 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-veil-of-love-everlasting",
+              "_id": "5a74465d139b21665bda5f92",
+              "title": "Veil of Love Everlasting",
+              "date": "2017",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "120 × 90 in",
+                "cm": "304.8 × 228.6 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-mickey-40",
+              "_id": "58704e15139b212c75002d3e",
+              "title": "Mickey",
+              "date": "2016",
+              "medium": "Silkscreen print plus glitter",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "34 × 27 1/2 in",
+                "cm": "86.4 × 69.9 cm"
+              }
+            },
+            {
+              "id": "damien-hirst-baby-blue-pfizer-vgr-100mg",
+              "_id": "56709a7b7076d049b4000006",
+              "title": "Baby Blue Pfizer VGR 100mg ",
+              "date": "2014",
+              "medium": "Polyurethane resin with ink pigment",
+              "category": "Sculpture",
+              "description": null,
+              "price": "$5,000 - 7,500",
+              "dimensions": {
+                "in": "4 1/50 × 2 87/100 × 1 11/50 in",
+                "cm": "10.2 × 7.3 × 3.1 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "Chinese, born 1957",
+          "name": "Ai Weiwei",
+          "birthday": "1957",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "ai-weiwei-he-xie-1",
+              "_id": "52952b5c8b3b8144d9000147",
+              "title": "He Xie",
+              "date": "2010",
+              "medium": "3200 porcelain crabs, dimensions variable",
+              "category": "Installation",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "ai-weiwei-second-panel-of-the-triptych-dropping-a-han-dynasty-urn",
+              "_id": "530d071d7622dd0f53000128",
+              "title": "Second panel of the triptych Dropping a Han Dynasty Urn",
+              "date": "1995",
+              "medium": "",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "ai-weiwei-han-jar-overpainted-with-coca-cola-logo-1",
+              "_id": "57e418137622dd517e000272",
+              "title": "Han Jar Overpainted with Coca-Cola Logo",
+              "date": "1994",
+              "medium": "Ceramic urn",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "10 × 8 1/2 × 8 1/2 in",
+                "cm": "25.4 × 21.6 × 21.6 cm"
+              }
+            },
+            {
+              "id": "ai-weiwei-han-jar-overpainted-with-coca-cola-logo",
+              "_id": "52e9802ca09a67502c00000c",
+              "title": "Han Jar Overpainted with Coca-Cola Logo",
+              "date": "1995",
+              "medium": "Earthenware, paint",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "9 7/8 × 11 × 11 in",
+                "cm": "25.1 × 27.9 × 27.9 cm"
+              }
+            },
+            {
+              "id": "ai-weiwei-coca-cola-vase-10",
+              "_id": "5bc08f3852e56e065a90e2ff",
+              "title": "Coca Cola Vase",
+              "date": "2013",
+              "medium": "Han Dynasty vase (206 BC-220 AD) and paint",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "14 3/5 × 11 4/5 × 11 4/5 in",
+                "cm": "37 × 30 × 30 cm"
+              }
+            },
+            {
+              "id": "ai-weiwei-watermelon-18",
+              "_id": "56ddaf877622dd65ad000694",
+              "title": "Watermelon",
+              "date": "2009",
+              "medium": "Glazed porcelain",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "16 1/2 × 16 1/2 × 16 1/2 in",
+                "cm": "41.9 × 41.9 × 41.9 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "Japanese, born 1948",
+          "name": "Hiroshi Sugimoto",
+          "birthday": "1948",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "hiroshi-sugimoto-ua-walker-new-york-and-limited-edition-theaters-book",
+              "_id": "52d6b877139b21ca2f000193",
+              "title": "U.A. Walker, New York & Limited Edition Theaters Book",
+              "date": "1978",
+              "medium": "Set of 2: Photogravure on acid-free BFA Paper + Limited edition book",
+              "category": "Photography",
+              "description": null,
+              "price": "$4,500",
+              "dimensions": {
+                "in": "17 × 21 in",
+                "cm": "43.2 × 53.3 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-lightning-fields-225",
+              "_id": "57c213708b3b81761a00106f",
+              "title": "Lightning Fields 225",
+              "date": "2009",
+              "medium": "Gelatin-silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "$18,000",
+              "dimensions": {
+                "in": "25 × 20 in",
+                "cm": "63.5 × 50.8 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-lightning-fields-327-1",
+              "_id": "59384d8d275b244d4c0ad778",
+              "title": "Lightning Fields 327",
+              "date": "2014",
+              "medium": "Gelatin-silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "$80,000",
+              "dimensions": {
+                "in": "71 3/4 × 60 in",
+                "cm": "182.2 × 152.4 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-stadium-drive-in-orange-1",
+              "_id": "5696805e7622dd652600008b",
+              "title": "Stadium Drive-In, Orange",
+              "date": "1993",
+              "medium": "Gelatin silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "20 × 24 in",
+                "cm": "50.8 × 61 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-alaskan-wolves",
+              "_id": "57c21372275b245cad000eb7",
+              "title": "Alaskan Wolves",
+              "date": "1994",
+              "medium": "Gelatin-silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "$20,000",
+              "dimensions": {
+                "in": "20 × 25 in",
+                "cm": "50.8 × 63.5 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-devonian-period",
+              "_id": "58fbe2917622dd4d3ec86093",
+              "title": "Devonian Period",
+              "date": "1992",
+              "medium": "Gelatin silver print, No. 10",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "20 × 24 in",
+                "cm": "50.8 × 61 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-lake-superior-cascade-river-3",
+              "_id": "59bc4811139b214a36729585",
+              "title": "Lake Superior, Cascade River",
+              "date": "1995",
+              "medium": "Gelatin silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "47 × 58 in",
+                "cm": "119.4 × 147.3 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-mediterranean-sea-la-ciotat-1",
+              "_id": "58249dbfc9dc2415c500081a",
+              "title": "Mediterranean Sea, La Ciotat",
+              "date": "1989",
+              "medium": "Gelatin silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "16 7/10 × 21 2/5 in",
+                "cm": "42.5 × 54.3 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-the-alps",
+              "_id": "58c035ac8b3b812a25db16e1",
+              "title": "The Alps",
+              "date": "1980",
+              "medium": "Gelatin Silver Print",
+              "category": "Print",
+              "description": null,
+              "price": "$120,000",
+              "dimensions": {
+                "in": "47 × 83 in",
+                "cm": "119.4 × 210.8 cm"
+              }
+            },
+            {
+              "id": "hiroshi-sugimoto-teatro-dei-rozzi-siena",
+              "_id": "584b15b4275b24066a0001c9",
+              "title": "Teatro dei Rozzi, Siena",
+              "date": "2014",
+              "medium": "Gelatin-silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "$200,000",
+              "dimensions": {
+                "in": "60 × 71 5/8 in",
+                "cm": "152.4 × 181.9 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, born 1955",
+          "name": "Jeff Koons",
+          "birthday": "1955",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "jeff-koons-red-balloon-dog-2",
+              "_id": "582f57f5139b211e33000b9a",
+              "title": "Red Balloon Dog",
+              "date": "1995",
+              "medium": "Metallized Porcelain",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "10 1/2 in diameter",
+                "cm": "26.7 cm diameter"
+              }
+            },
+            {
+              "id": "jeff-koons-blue-balloon-dog-3",
+              "_id": "582f57972a893a26fb000b9c",
+              "title": "Blue Balloon Dog",
+              "date": "2002",
+              "medium": "Metallized Porcelain",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "10 1/2 in diameter",
+                "cm": "26.7 cm diameter"
+              }
+            },
+            {
+              "id": "jeff-koons-new-hoover-convertibles-green-blue-new-hoover-convertibles-green-blue-doubledecker",
+              "_id": "53ab42a77261692d5a1e0300",
+              "title": "New Hoover Convertibles Green, Blue, New Hoover Convertibles, Green, Blue Doubledecker",
+              "date": "1981-1987",
+              "medium": "Four vacuum cleaners, acrylic, and fluorescent lights",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "116 × 41 × 28 in",
+                "cm": "294.6 × 104.1 × 71.1 cm"
+              }
+            },
+            {
+              "id": "jeff-koons-arthur-doyle-trio-live-at-the-alterknit",
+              "_id": "58f03ae48b0c143a3e3962db",
+              "title": "Arthur Doyle Trio - Live At the Alterknit",
+              "date": "2008",
+              "medium": "Record album",
+              "category": "Print",
+              "description": null,
+              "price": "$850",
+              "dimensions": {
+                "in": "12 × 12 in",
+                "cm": "30.5 × 30.5 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "German-Australian, 1920-2004",
+          "name": "Helmut Newton",
+          "birthday": "1920",
+          "deathday": "2004",
+          "artworks": [
+            {
+              "id": "helmut-newton-elsa-peretti-bunny-shot",
+              "_id": "59b09319b202a34d7d083522",
+              "title": "Elsa Peretti \"Bunny Shot\"",
+              "date": "1982",
+              "medium": "Silver Gelatin Print",
+              "category": "Print",
+              "description": null,
+              "price": "$40,000 - 50,000",
+              "dimensions": {
+                "in": "24 × 20 in",
+                "cm": "61 × 50.8 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-legs-in-stockings-at-attention",
+              "_id": "59ba1483139b215d0013adec",
+              "title": "Legs in Stockings at Attention",
+              "date": "1979",
+              "medium": "Silver gelatin print",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "20 × 16 in",
+                "cm": "50.8 × 40.6 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-elsa-peretti",
+              "_id": "5955377ab202a34d5b1e856c",
+              "title": "Elsa Peretti",
+              "date": "1975",
+              "medium": "Gelatin silver print, No. 12 of Edition: 75",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "16 1/4 × 11 3/4 in",
+                "cm": "41.3 × 29.8 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-shoe-monte-carlo",
+              "_id": "5298eb97275b24f3c90002e1",
+              "title": "Shoe, Monte Carlo",
+              "date": "1983",
+              "medium": "Gelatin silver print, printed later",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "14 3/10 × 9 3/10 in",
+                "cm": "36.2 × 23.5 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-hinterhof-akt-paris",
+              "_id": "58cb5cb29c18db0d3b99ca48",
+              "title": "Hinterhof Akt, Paris",
+              "date": "1974",
+              "medium": "Gelatin silver print, printed later",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "62 1/5 × 42 1/10 in",
+                "cm": "158.1 × 107 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-david-bowie-classic-portrait",
+              "_id": "59ba148dc9dc242d0b8f0b8f",
+              "title": "David Bowie Classic Portrait",
+              "date": "1982",
+              "medium": "Silver gelatin print",
+              "category": "Print",
+              "description": null,
+              "price": "$7,500 - 10,000",
+              "dimensions": {
+                "in": "36 × 24 in",
+                "cm": "91.4 × 61 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-untitled-ii-hollywood-1",
+              "_id": "566af1ffcd530e64d9000050",
+              "title": "Untitled II, Hollywood",
+              "date": "1989",
+              "medium": "Silver gelatin print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "47 1/5 × 47 1/5 in",
+                "cm": "120 × 120 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-self-portrait-with-wife-and-models",
+              "_id": "577fc062cd530e65e30002be",
+              "title": "Self Portrait with Wife and Models",
+              "date": "1981",
+              "medium": "",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "helmut-newton-veruschka-nice-1",
+              "_id": "5a22d762139b2169c59e60c8",
+              "title": "Veruschka, Nice",
+              "date": "1975",
+              "medium": "Silver Gelatin Photograph",
+              "category": "Photography",
+              "description": null,
+              "price": "$20,000 - 30,000",
+              "dimensions": {
+                "in": "9 1/2 × 14 3/8 in",
+                "cm": "24.1 × 36.5 cm"
+              }
+            },
+            {
+              "id": "helmut-newton-jeff-koons-and-cicciolina-italy-1",
+              "_id": "566af0ef9c18db249700022d",
+              "title": "Jeff Koons & Cicciolina, Italy",
+              "date": "1991",
+              "medium": "Silver gelatin print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "23 7/10 × 20 in",
+                "cm": "60.2 × 50.8 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "French, 1887-1968",
+          "name": "Marcel Duchamp",
+          "birthday": "1887",
+          "deathday": "1968",
+          "artworks": [
+            {
+              "id": "marcel-duchamp-bicycle-wheel",
+              "_id": "4f750b021866a60001000595",
+              "title": "Bicycle Wheel",
+              "date": "1963",
+              "medium": "Readymade",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "marcel-duchamp-fountain",
+              "_id": "53602287275b248ead0003b0",
+              "title": "Fountain",
+              "date": "1917/1964",
+              "medium": "Glazed ceramic with black paint",
+              "category": "Sculpture",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "15 × 19 1/4 × 24 5/8 in",
+                "cm": "38.1 × 48.9 × 62.5 cm"
+              }
+            },
+            {
+              "id": "marcel-duchamp-dada",
+              "_id": "585bf1358b0c1442f4000043",
+              "title": "DADA ",
+              "date": "1953",
+              "medium": "Original Limited Edition Lithograph and Screenprint on Parchment Paper",
+              "category": "Drawing, Collage or other Work on Paper",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "37 1/2 × 25 in",
+                "cm": "95.3 × 63.5 cm"
+              }
+            },
+            {
+              "id": "marcel-duchamp-lhooq-mona-lisa",
+              "_id": "50338ea8dadcba0002000467",
+              "title": "L.H.O.O.Q. Mona Lisa",
+              "date": "1919",
+              "medium": "Retouched readymade (reproduction of Leonardo da Vinci's Mona Lisa with added moustache and beard).",
+              "category": "Drawing, Collage or other Work on Paper",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "marcel-duchamp-fountain-2",
+              "_id": "5785465d7622dd65e200076a",
+              "title": "Fountain",
+              "date": "1950",
+              "medium": "",
+              "category": "Installation",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, born 1936",
+          "name": "Frank Stella",
+          "birthday": "1936",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "frank-stella-metropolitan-museum-of-art-centennial",
+              "_id": "583ee2c99c18db49ac001170",
+              "title": "Metropolitan Museum of Art Centennial ",
+              "date": "1970",
+              "medium": "Silkscreen (Signed/Numbered/Dated in Pencil) with Metropolitan Museum blind stamp. Unframed",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "36 × 36 in",
+                "cm": "91.4 × 91.4 cm"
+              }
+            },
+            {
+              "id": "frank-stella-the-counterpane",
+              "_id": "56d0bf5d319aa133a500016d",
+              "title": "The Counterpane",
+              "date": "1985-1989",
+              "medium": "Silkscreen, lithography, linoleoum block, marbling, collage, with hand-coloring",
+              "category": "Drawing, Collage or other Work on Paper",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "71 × 51 in",
+                "cm": "180.3 × 129.5 cm"
+              }
+            },
+            {
+              "id": "andy-warhol-twenty-years-1977-signed-slash-inscribed-by-leo-exhibition-catalogue-leo-castelli-gallery-1st-edition",
+              "_id": "5a33470d8b0c14665b377975",
+              "title": "\"Twenty Years\", 1977, SIGNED/Inscribed by Leo, Exhibition Catalogue, Leo Castelli Gallery, 1st Edition",
+              "date": "1977",
+              "medium": "Lithograph on paper.",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "11 × 9 in",
+                "cm": "27.9 × 22.9 cm"
+              }
+            },
+            {
+              "id": "frank-stella-tahkt-1-sulayman-variation-ii",
+              "_id": "589a43579c18db757a4d113e",
+              "title": "Tahkt-1-Sulayman Variation II",
+              "date": "1989",
+              "medium": "Poster",
+              "category": "Other",
+              "description": null,
+              "price": "$1,400",
+              "dimensions": {
+                "in": "36 × 58 in",
+                "cm": "91.4 × 147.3 cm"
+              }
+            },
+            {
+              "id": "frank-stella-centennial-medal-commemorative-medal-for-the-centennial-of-the-metropolitan-museum-of-art",
+              "_id": "594924542a893a0f7caa1539",
+              "title": "Centennial Medal: Commemorative Medal for the Centennial of the Metropolitan Museum of Art ",
+              "date": "1970",
+              "medium": "17 Color enamel on rhodium plated bronze plaque (incised signature and museum logo)",
+              "category": "Sculpture",
+              "description": null,
+              "price": "$550",
+              "dimensions": {
+                "in": "3 × 3 in",
+                "cm": "7.6 × 7.6 cm"
+              }
+            },
+            {
+              "id": "frank-stella-new-madrid",
+              "_id": "58861ff9c9dc240a32003d82",
+              "title": "New Madrid",
+              "date": "1971",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "16 × 22 in",
+                "cm": "40.6 × 55.9 cm"
+              }
+            },
+            {
+              "id": "frank-stella-feneralia-3",
+              "_id": "58b4578fb202a34cabe42b29",
+              "title": "Feneralia",
+              "date": "1995",
+              "medium": "Lithograph, screenprint, etching",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "46 × 42 in",
+                "cm": "116.8 × 106.7 cm"
+              }
+            },
+            {
+              "id": "frank-stella-the-affidavit",
+              "_id": "574e5d5c9c18db5e870004e9",
+              "title": "The Affidavit",
+              "date": "1993",
+              "medium": "Mixed Media: Relief, Lithograph, Etching, Aquatint, Screenprint. signed, dated and numbered; framed with label",
+              "category": "Print",
+              "description": null,
+              "price": "$30,000",
+              "dimensions": {
+                "in": "69 1/4 × 52 1/2 in",
+                "cm": "175.9 × 133.4 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, born 1931",
+          "name": "John Baldessari",
+          "birthday": "1931",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "john-baldessari-studio-1",
+              "_id": "59957dd6b202a34d71bc7efd",
+              "title": "Studio",
+              "date": "1988",
+              "medium": "Lithograph with colour screenprinting",
+              "category": "Print",
+              "description": null,
+              "price": "£10,000 - 15,000",
+              "dimensions": {
+                "in": "29 2/5 × 38 in",
+                "cm": "74.8 × 96.5 cm"
+              }
+            },
+            {
+              "id": "john-baldessari-radio",
+              "_id": "5881f01f275b24399700263e",
+              "title": "RADIO",
+              "date": "2015",
+              "medium": "Varnished inkjet print on canvas with acrylic paint",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "59 1/2 × 54 × 1 3/5 in",
+                "cm": "151.1 × 137.2 × 4 cm"
+              }
+            },
+            {
+              "id": "john-baldessari-pollock-slash-benton-balanced",
+              "_id": "583e412b8b0c14687f000d9d",
+              "title": "Pollock/Benton: Balanced",
+              "date": "2016",
+              "medium": "Varnished inkjet print on canvas with acrylic paint",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "95 1/2 × 52 1/2 × 1 5/8 in",
+                "cm": "242.6 × 133.4 × 4.1 cm"
+              }
+            },
+            {
+              "id": "john-baldessari-red-slipper",
+              "_id": "5822364ea09a6758cf000160",
+              "title": "Red Slipper",
+              "date": "2015",
+              "medium": "6 Color Lithograph with Embossing",
+              "category": "Print",
+              "description": null,
+              "price": "$4,500",
+              "dimensions": {
+                "in": "24 53/121 × 13 121/129 in",
+                "cm": "62.1 × 35.4 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "French, 1882-1963",
+          "name": "Georges Braque",
+          "birthday": "1882",
+          "deathday": "1963",
+          "artworks": [
+            {
+              "id": "georges-braque-figure-1",
+              "_id": "5a9d6fc3cd530e4a02a76d19",
+              "title": "Figure",
+              "date": "1939",
+              "medium": "Color lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "$850",
+              "dimensions": {
+                "in": "14 × 11 in",
+                "cm": "35.6 × 27.9 cm"
+              }
+            },
+            {
+              "id": "georges-braque-persephata",
+              "_id": "576cf8c6275b247968000005",
+              "title": "Persephata",
+              "date": "1988",
+              "medium": "Vélin d'Arches Paper",
+              "category": "Print",
+              "description": null,
+              "price": "€380",
+              "dimensions": {
+                "in": "22 4/5 × 17 7/10 in",
+                "cm": "58 × 45 cm"
+              }
+            },
+            {
+              "id": "georges-braque-profil-de-femme-from-souvenirs-de-portraits-dartistes",
+              "_id": "5af5fddfa09a67341841fbbd",
+              "title": "Profil de Femme from Souvenirs de Portraits d'Artistes",
+              "date": "1972",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "$800",
+              "dimensions": {
+                "in": "16 1/2 × 14 in",
+                "cm": "41.9 × 35.6 cm"
+              }
+            },
+            {
+              "id": "georges-braque-la-danse",
+              "_id": "5a4fb6398b3b81516b259879",
+              "title": "La Danse",
+              "date": "1934",
+              "medium": "Etching",
+              "category": "Print",
+              "description": null,
+              "price": "€4,800",
+              "dimensions": {
+                "in": "11 × 8 7/10 in",
+                "cm": "28 × 22 cm"
+              }
+            },
+            {
+              "id": "georges-braque-profil",
+              "_id": "57ef9f8dc9dc245bad00057c",
+              "title": "Profil",
+              "date": "ca. 1942",
+              "medium": "Oil on original canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "27 2/5 × 38 in",
+                "cm": "69.6 × 96.6 cm"
+              }
+            },
+            {
+              "id": "georges-braque-aegle",
+              "_id": "576cf8c0139b217c07000012",
+              "title": "Aegle",
+              "date": "1988",
+              "medium": "Vélin d'Arches Paper",
+              "category": "Print",
+              "description": null,
+              "price": "€380",
+              "dimensions": {
+                "in": "17 7/10 × 22 4/5 in",
+                "cm": "45 × 58 cm"
+              }
+            },
+            {
+              "id": "georges-braque-violin-and-candlestick",
+              "_id": "5063cb0f6bf0c5000200021c",
+              "title": "Violin and Candlestick",
+              "date": "1910",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "24 × 19 3/4 in",
+                "cm": "61 × 50.2 cm"
+              }
+            },
+            {
+              "id": "georges-braque-viaduct-at-lestaque",
+              "_id": "503232e12b117f000200032d",
+              "title": "Viaduct at L'Estaque",
+              "date": "1908",
+              "medium": "Oil on on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "28 1/2 × 23 1/5 in",
+                "cm": "72.5 × 59 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "Japanese, born 1940",
+          "name": "Nobuyoshi Araki",
+          "birthday": "1940",
+          "deathday": null,
+          "artworks": [
+            {
+              "id": "nobuyoshi-araki-past-tense-future",
+              "_id": "57072d0f7622dd3ab4000c45",
+              "title": "Past tense – Future",
+              "date": "1979-2011/2012",
+              "medium": "Gelatin silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": null,
+                "cm": null
+              }
+            },
+            {
+              "id": "nobuyoshi-araki-tokyo-comedy-1",
+              "_id": "566aff7a6428703cd800026b",
+              "title": "Tokyo Comedy",
+              "date": "1997",
+              "medium": "B/W print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "40 × 60 in",
+                "cm": "101.5 × 152.5 cm"
+              }
+            },
+            {
+              "id": "nobuyoshi-araki-lady-gaga",
+              "_id": "58d0b8cf275b24281eddaa71",
+              "title": "Lady Gaga",
+              "date": "2011",
+              "medium": "Gelatin Silver Print",
+              "category": "Photography",
+              "description": null,
+              "price": "$30,000",
+              "dimensions": {
+                "in": "52 2/5 × 42 9/10 in",
+                "cm": "133 × 109 cm"
+              }
+            },
+            {
+              "id": "nobuyoshi-araki-kaori-through-the-looking-glass-1",
+              "_id": "57977529cb4c276604000171",
+              "title": "KaoRi Through the Looking Glass",
+              "date": "2015-2016",
+              "medium": "RP-Pro Crystal print",
+              "category": "Photography",
+              "description": null,
+              "price": "£7,500 - 10,000",
+              "dimensions": {
+                "in": "18 × 22 3/4 in",
+                "cm": "45.7 × 57.8 cm"
+              }
+            },
+            {
+              "id": "nobuyoshi-araki-a-series-of-a-world-of-girls",
+              "_id": "57e0f1e98b3b8175b700026a",
+              "title": "A series of \"a world of girls\"",
+              "date": "ca. 1983",
+              "medium": "Gelatin silver print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "33 × 23 9/10 in",
+                "cm": "83.7 × 60.7 cm"
+              }
+            },
+            {
+              "id": "nobuyoshi-araki-untitled-from-colourscapes-1",
+              "_id": "5900ff97cd530e0e09158406",
+              "title": "Untitled from Colourscapes",
+              "date": "1991",
+              "medium": "Chromogenic print on high gloss Fuji crystal paper, flush-mounted",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "49 1/2 × 39 1/10 in",
+                "cm": "125.8 × 99.2 cm"
+              }
+            },
+            {
+              "id": "nobuyoshi-araki-untitled-from-colourscapes-2",
+              "_id": "5a4fd94b9c18db4f733111f4",
+              "title": "Untitled, from Colourscapes",
+              "date": "1991",
+              "medium": "Chromogenic print",
+              "category": "Photography",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "60 × 40 in",
+                "cm": "152.4 × 101.6 cm"
+              }
+            },
+            {
+              "id": "nobuyoshi-araki-untitled-32",
+              "_id": "5a2b0867275b244d5bf0c1f0",
+              "title": "Untitled",
+              "date": "1993",
+              "medium": "Silver gelatin print",
+              "category": "Photography",
+              "description": null,
+              "price": "$29,000",
+              "dimensions": {
+                "in": "24 3/4 × 30 1/2 in",
+                "cm": "62.9 × 77.5 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, born 1970",
+          "name": "Shepard Fairey",
+          "birthday": "1970",
+          "deathday": "",
+          "artworks": [
+            {
+              "id": "shepard-fairey-make-art-not-war-23",
+              "_id": "58e7cf692a893a1d1ff6f3e8",
+              "title": "Make Art Not War",
+              "date": "2016",
+              "medium": "Offset lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "$1,250",
+              "dimensions": {
+                "in": "36 × 24 in",
+                "cm": "91.4 × 61 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-universal-personhood",
+              "_id": "52e137984b8480bd1e000480",
+              "title": "Universal Personhood",
+              "date": "2013",
+              "medium": "Mixed media (stencil, silkscreen and collage) on canvas. Framed",
+              "category": "Painting",
+              "description": null,
+              "price": "$40,000 - 50,000",
+              "dimensions": {
+                "in": "62 1/5 × 46 1/10 × 3 1/10 in",
+                "cm": "158 × 117 × 8 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-hope-9",
+              "_id": "58e1af642a893a258c66393b",
+              "title": "HOPE",
+              "date": "2008",
+              "medium": "Offset lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "36 × 24 in",
+                "cm": "91.4 × 61 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-peace-elephant-16",
+              "_id": "58e7cf5fa09a6767d2c15470",
+              "title": "Peace Elephant",
+              "date": "2011",
+              "medium": "Archival pigment prints on 100% cotton rag paper",
+              "category": "Print",
+              "description": "“The peace sign has long been an important image and symbol for me, not just because I am pro-harmony and anti-war, but because it is the graphic icon that taught me the power of an easily recognized and reproduced symbol,” Shepard Fairey [wrote](https://www.cnn.com/style/article/jim-marshall-peace-shepard-fairey/index.html) in 2017. Over his three decades in street art, Fairey has incorporated anti-war motifs like peace fingers, doves, and flowers (a symbol made popular by anti-Vietnam War activists in the 1960s) into his own body of work. From poster campaigns fighting for justice in Darfur, Sudan to his iconic “Peace Guard” prints featuring guns growing red roses, Fairey’s work spreads a message of global unity. “Small rebellious acts like a piece of graffiti pushing back against injustice, encourage me to take action and remind me that regardless of how alone I may feel, there are kindred spirits out there,” he has [said](https://www.cnn.com/style/article/jim-marshall-peace-shepard-fairey/index.html).",
+              "price": "$1,650",
+              "dimensions": {
+                "in": "14 × 11 in",
+                "cm": "35.6 × 27.9 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-guns-and-roses-10",
+              "_id": "58e1af517622dd4d5a4cf2a8",
+              "title": "Guns and Roses",
+              "date": "2007",
+              "medium": "Offset lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "$2,250",
+              "dimensions": {
+                "in": "36 × 24 in",
+                "cm": "91.4 × 61 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-eye-alert",
+              "_id": "58e1af6bcd530e4d66e5d3c7",
+              "title": "Eye Alert",
+              "date": "2007",
+              "medium": "Offset",
+              "category": "Print",
+              "description": null,
+              "price": "$1,250",
+              "dimensions": {
+                "in": "36 × 24 in",
+                "cm": "91.4 × 61 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-make-art-not-war-21",
+              "_id": "5aad27999c18db6707b2f244",
+              "title": "Make Art Not War",
+              "date": "2018",
+              "medium": "Screen print on cream Speckletone paper",
+              "category": "Print",
+              "description": null,
+              "price": "$220",
+              "dimensions": {
+                "in": "24 × 36 in",
+                "cm": "61 × 91.4 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-basquiat",
+              "_id": "5380eb29139b210fbd0005c8",
+              "title": "Basquiat",
+              "date": "2010",
+              "medium": "Screenprint",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "24 × 18 in",
+                "cm": "61 × 45.7 cm"
+              }
+            },
+            {
+              "id": "shepard-fairey-vote-obama",
+              "_id": "58e1af648b0c144c0ab47bc2",
+              "title": "VOTE Obama",
+              "date": "2008",
+              "medium": "Offset lithograph",
+              "category": "Print",
+              "description": "“I wanted strong. I wanted wise, but not intimidating,” Shepard Fairey [said](http://www.washingtonpost.com/wp-dyn/content/story/2008/05/16/ST2008051602005.html) of his iconic poster design for Barack Obama’s 2008 presidential campaign. Set in Fairey’s signature graphic style with a patriotic palette of red, white, and blue, the portrait portrays Obama looking into the distance with a sense of hopeful determination. The street artist based this expression on a photograph of the candidate, taken by Mannie Garcia two years prior, that he discovered through a Google Image Search. Fairey is said to have completed the poster design in a single day, and he began selling the posters on the street himself before Super Tuesday. The image quickly went viral and became inseparable from the campaign, featured on t-shirts, bumper stickers, buttons, and more.",
+              "price": "$1,350",
+              "dimensions": {
+                "in": "40 × 26 in",
+                "cm": "101.6 × 66 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "Spanish, 1887-1927",
+          "name": "Juan Gris",
+          "birthday": "1887",
+          "deathday": "1927",
+          "artworks": [
+            {
+              "id": "juan-gris-le-petit-dejeuner",
+              "_id": "50770b862012080002000b35",
+              "title": "Le Petit Dejeuner",
+              "date": "1915",
+              "medium": "Oil and charcoal on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "92 × 73 in",
+                "cm": "233.7 × 185.4 cm"
+              }
+            },
+            {
+              "id": "juan-gris-woman",
+              "_id": "50770b862012080002000b25",
+              "title": "Woman",
+              "date": "1915-1917",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "116 × 73 in",
+                "cm": "294.6 × 185.4 cm"
+              }
+            },
+            {
+              "id": "juan-gris-journal-et-compotier",
+              "_id": "577ced2acd530e65e2000019",
+              "title": "Journal et compotier",
+              "date": "1916",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "18 1/10 × 14 9/10 in",
+                "cm": "46 × 37.8 cm"
+              }
+            },
+            {
+              "id": "juan-gris-fantomas",
+              "_id": "515b234a223afae9a5000ff4",
+              "title": "Fantômas",
+              "date": "1915",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "23 9/16 × 28 7/8 in",
+                "cm": "59.8 × 73.3 cm"
+              }
+            },
+            {
+              "id": "juan-gris-lhomme-au-cafe",
+              "_id": "5cb77e8967af9e3525cc02b0",
+              "title": "L'Homme au Café",
+              "date": "ca. 1912",
+              "medium": "Pencil on paper",
+              "category": "Drawing, Collage or other Work on Paper",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "14 1/2 × 11 1/2 in",
+                "cm": "36.8 × 29.2 cm"
+              }
+            },
+            {
+              "id": "juan-gris-violon-et-guitare",
+              "_id": "5c5089f6172233685af71d43",
+              "title": "Violon et Guitare",
+              "date": "1977",
+              "medium": "Lithograph",
+              "category": "Print",
+              "description": null,
+              "price": "€1,200",
+              "dimensions": {
+                "in": "20 9/10 × 15 2/5 in",
+                "cm": "53 × 39 × 0.1 cm"
+              }
+            },
+            {
+              "id": "juan-gris-le-raisin-noir",
+              "_id": "5cbf2e11c8e30a2a5688368d",
+              "title": "Le raisin noir",
+              "date": "1923",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "8 9/10 × 13 1/5 in",
+                "cm": "22.5 × 33.5 cm"
+              }
+            },
+            {
+              "id": "juan-gris-still-life-with-newspaper",
+              "_id": "52aa01888b3b812a0e000201",
+              "title": "Still Life with Newspaper",
+              "date": "1916",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "29 × 23 3/4 in",
+                "cm": "73.7 × 60.3 cm"
+              }
+            },
+            {
+              "id": "juan-gris-abstraction",
+              "_id": "52aa01887622ddc6740000a0",
+              "title": "Abstraction",
+              "date": "1915",
+              "medium": "Oil and oil with sand on cardboard",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "11 19/50 × 7 3/4 in",
+                "cm": "28.9 × 19.7 cm"
+              }
+            }
+          ]
+        },
+        {
+          "gender": null,
+          "bio": "American, 1931-2004",
+          "name": "Tom Wesselmann",
+          "birthday": "1931",
+          "deathday": "2004",
+          "artworks": [
+            {
+              "id": "tom-wesselmann-mouth",
+              "_id": "5888c3449c18db2b8a99c96c",
+              "title": "Mouth",
+              "date": "1967",
+              "medium": "Color rubber stamp print on Rives BFK paper",
+              "category": "Print",
+              "description": null,
+              "price": "$5,000 - 7,500",
+              "dimensions": {
+                "in": "9 1/2 × 7 in",
+                "cm": "24.1 × 17.8 cm"
+              }
+            },
+            {
+              "id": "tom-wesselmann-study-for-blue-nude-number-3",
+              "_id": "58211647b202a31e1200046d",
+              "title": "Study for Blue Nude #3",
+              "date": "2001",
+              "medium": "Screenprint",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "17 × 19 in",
+                "cm": "43.2 × 48.3 cm"
+              }
+            },
+            {
+              "id": "tom-wesselmann-smoker-number-3",
+              "_id": "5809e6609c18db5770001b29",
+              "title": "Smoker #3",
+              "date": "1968",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "71 1/2 × 67 in",
+                "cm": "181.6 × 170.2 cm"
+              }
+            },
+            {
+              "id": "tom-wesselmann-still-life-with-liz",
+              "_id": "52603b107622dd83f8000214",
+              "title": "Still Life with Liz",
+              "date": "1992",
+              "medium": "Silkscreen",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "59 1/2 × 57 in",
+                "cm": "151.1 × 144.8 cm"
+              }
+            },
+            {
+              "id": "tom-wesselmann-study-for-blue-nude-number-10",
+              "_id": "58ae1f159c18db05e7a1faa7",
+              "title": "Study for Blue Nude #10",
+              "date": "2000",
+              "medium": "Oil on canvas",
+              "category": "Painting",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "10 1/2 × 13 3/4 in",
+                "cm": "26.7 × 34.9 cm"
+              }
+            },
+            {
+              "id": "tom-wesselmann-great-american-nude-drawing-for-silkscreen-nude",
+              "_id": "57604337b202a305bb00022b",
+              "title": "Great American Nude Drawing for Silkscreen Nude",
+              "date": "1965",
+              "medium": "Graphite on paper",
+              "category": "Drawing, Collage or other Work on Paper",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "8 1/4 × 9 5/8 in",
+                "cm": "21 × 24.4 cm"
+              }
+            },
+            {
+              "id": "tom-wesselmann-blonde-vivienne-8",
+              "_id": "58ae1f39275b241e86d748aa",
+              "title": "Blonde Vivienne",
+              "date": "1988",
+              "medium": "Screenprint in colors on wove paper",
+              "category": "Print",
+              "description": null,
+              "price": "",
+              "dimensions": {
+                "in": "57 1/2 × 57 1/4 in",
+                "cm": "146.1 × 145.4 cm"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

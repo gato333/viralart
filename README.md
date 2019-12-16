@@ -47,12 +47,12 @@ babel-node data/addArtistArtworkConnection.js
 
 
 ## To do
-- make react enviornment to house d3.js
 - then we can start manipulating the charts d3.js
-- host on heroku
 - make db generation script data/init.js
 
 ### To do: done
+- import d3, specifically to work with react
+- host on heroku
 - implmented compile of sass|sass to css, serving to app.js
 - sort out the react app.js stuff to serve
 - get webpack to run, and server.js serving correctly

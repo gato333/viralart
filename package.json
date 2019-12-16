@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "rm -rf ./build; webpack; cp -a public/. build/;",
-    "webpack-watch" :  "rm -rf ./build; webpack --watch; cp -a public/. build/;",
+    "webpack-watch": "rm -rf ./build; webpack --watch; cp -a public/. build/;",
     "start": "node build/server.bundle.js",
     "restart": "cp -a public/. build/; node build/server.bundle.js",
     "pack-n-start": "rm -rf ./build; webpack; cp -a public/. build/; node build/server.bundle.js;"
@@ -48,5 +48,8 @@
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "d3": "^5.14.2"
   }
 }

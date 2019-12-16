@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Gabriela Voll",
   "license": "PROPRIETARY",
+  "engines": {
+    "node": "^12.13.1",
+    "npm": "^6.12.1"
+  },
   "scripts": {
     "webpack": "rm -rf ./build; webpack; cp -a public/. build/;",
     "webpack-watch" :  "rm -rf ./build; webpack --watch; cp -a public/. build/;",

@@ -5,7 +5,7 @@ import path from 'path'
 
 const app = express();
 const hostname = 'localhost';
-const port = 6660;
+const port = process.env.PORT || 6660;
 
 app.use(rawBody);
 app.use(bodyParser.urlencoded({ extended: false }));

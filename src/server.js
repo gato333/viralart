@@ -52,27 +52,28 @@ app.get( "/*", async (req, res) => {
 				getArtists(),
 				getArtworks(),
 				getArtistArtworkRels()
-			])
+			]);
 			artists = artistsArr.reduce( (map, obj) => {
 				var id = obj.id;
 				delete obj['id'];
-				map.set(id, obj);
+				map[id] = obj;
 			    return map;
-			}, new Map() );
+			}, {});
 
 			artworks = artworksArr.reduce( (map, obj) => {
 				var id = obj.id;
 				delete obj['id'];
-				map.set(id, obj);
+				map[id] = obj;
 			    return map;
-			}, new Map() );
+			}, {});
 		} catch (e){
 			console.log('date hydrate failure: ', e)
 		}
 		let preloadedState = { artists, artworks, aaRelationships };
 		const store = configureStore(preloadedState);
+		const finalState = store.getState();
 		const app = renderToString(<AppRouter store={store} />); 
-		return res.status(200).send(renderHTMLwithInject(app, preloadedState))
+		return res.status(200).send(renderHTMLwithInject(app, finalState))
 
 	}
 });

@@ -47,11 +47,13 @@ babel-node data/addArtistArtworkConnection.js
 
 
 ## To do
-- create initial store obj and pass it down to client
-- then we can start manipulating the charts d3.js
+- fill out object for data manip
+- then we can start manipulating the charts three.js
 - make db generation script data/init.js
 
 ### To do: done
+- import three.js instead of d3
+- create initial store obj and pass it down to client (server-side rendering)
 - import d3, specifically to work with react
 - host on heroku
 - implmented compile of sass|sass to css, serving to app.js

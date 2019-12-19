@@ -1,12 +1,23 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router';
 import { bindActionCreators } from 'redux';
+import DetailViewer from './DetailViewer.jsx';
 
-const Home = () => (
-	<div>
-		FOR REAL
- 	</div>
-);
+class Home extends React.Component { 
+	render(){
+		return (
+			<div>
+				<DetailViewer />
+		 	</div>
+		);
+	}
+}
 
-export default withRouter(Home);
+
+function mapStateToProps(state) {
+  return {
+    //artworks: state.artworks
+  }
+}
+
+export default connect(mapStateToProps)(Home);

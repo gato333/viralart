@@ -1,29 +1,12 @@
 import './styles.scss';
-import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import configureStore from './store.js';
-import Home from './components/Home.jsx';
-import SampleHome from './components/design/SampleHome.jsx';
+import AppRouter from './components/AppRouter.jsx';
 
-const store = configureStore();
+const preloadedState = window.__PRELOADED_STATE__
+delete window.__PRELOADED_STATE__
 
-class Wrapper extends React.Component{
-	render() {
-		return (
-		  <div>
-		    <Provider store={store}>
-		      <BrowserRouter>
-		      	<Switch>
-			        <Route exact path="/" component={Home} /> 
-			        <Route path='/design' component={SampleHome} />
-			    </Switch>
-		      </BrowserRouter>
-		    </Provider>
-		  </div>
-		);
-	}
-}
+const store = configureStore(preloadedState);
 
-render(<Wrapper />, document.getElementById('root'));
+console.log('hydrate');
+ReactDOM.hydrate(<AppRouter store={store} />, document.getElementById('root'));
+

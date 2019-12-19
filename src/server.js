@@ -2,6 +2,16 @@ import express from 'express'
 import cookieParser from 'cookie-parser'
 import bodyParser from 'body-parser'
 import path from 'path'
+import { getArtistArtworkRels,
+	getArtworks,
+	getArtists } from '../data/db.js';
+
+import { renderToString } from 'react-dom/server';
+import React from 'react';
+import configureStore from './store.js';
+import renderHTMLwithInject from './html.js';
+import AppRouter from './components/AppRouter.jsx';
+
 
 const app = express();
 const hostname = 'localhost';
@@ -32,9 +42,37 @@ function rawBody(req, res, next) {
 const validFiles = [ '/favicon.ico', '/main.js', '/main.js.map', '/styles.css',
 	'/styles.css.map', '/server.bundle.js.map', '/server.bundle.js'];
 
-app.get( "/*", (req, res) => {
+app.get( "/*", async (req, res) => {
 	if( validFiles.includes(req.url) || /.(jpg|png)$/.test(req.url) )
 		return res.status(200).sendFile(path.join(__dirname + req.url))
-	else
-		return res.status(200).sendFile(path.join(__dirname + '/index.html'));
+	else {
+		let artists = {}, artworks = {}, aaRelationships = [], artistsArr = [], artworksArr = [];
+		try {
+			[ artistsArr, artworksArr, aaRelationships ] = await Promise.all([
+				getArtists(),
+				getArtworks(),
+				getArtistArtworkRels()
+			])
+			artists = artistsArr.reduce( (map, obj) => {
+				var id = obj.id;
+				delete obj['id'];
+				map.set(id, obj);
+			    return map;
+			}, new Map() );
+
+			artworks = artworksArr.reduce( (map, obj) => {
+				var id = obj.id;
+				delete obj['id'];
+				map.set(id, obj);
+			    return map;
+			}, new Map() );
+		} catch (e){
+			console.log('date hydrate failure: ', e)
+		}
+		let preloadedState = { artists, artworks, aaRelationships };
+		const store = configureStore(preloadedState);
+		const app = renderToString(<AppRouter store={store} />); 
+		return res.status(200).send(renderHTMLwithInject(app, preloadedState))
+
+	}
 });

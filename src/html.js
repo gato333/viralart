@@ -6,7 +6,7 @@ export default function renderHTMLwithInject(html, preloadedState) {
 	  <meta charset="UTF-8">
 	  <title>ViralArt - Home</title>
 	  <link rel="stylesheet" href="/styles.css">
-	  <script src="https://d3js.org/d3.v5.min.js"></script>
+  	  <script src="js/three.min.js"></script>
 	</head>
 	<body>
 	  <div id="root">${html}</div>

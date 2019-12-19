@@ -49,7 +49,5 @@
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0"
   },
-  "devDependencies": {
-    "d3": "^5.14.2"
-  }
+  "devDependencies": {}
 }

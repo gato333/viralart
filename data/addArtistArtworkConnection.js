@@ -10,7 +10,7 @@ import {
 	addArtistArtworkRel,
 	addArtist,
 	getArtistArtworkRels
-} from './dbUtils.js';
+} from './db.js';
 
 async function main(){
 	var artists = (await getArtists());

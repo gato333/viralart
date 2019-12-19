@@ -9,7 +9,7 @@ import {
 	addArtworks,
 	getArtists,
 	addArtists
-} from './dbUtils.js';
+} from './db.js';
 
 import { stringOrNull } from './util.js';
 var dataFile = require('./artsy/graphQLdata.json');

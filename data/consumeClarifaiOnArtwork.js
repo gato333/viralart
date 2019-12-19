@@ -10,7 +10,7 @@
 import {
 	getArtworks,
 	updateArtwork
-} from './dbUtils.js';
+} from './db.js';
 import {stringOrNull} from './util.js';
 import getImageAnalysis from './getImageAnalysis';
 

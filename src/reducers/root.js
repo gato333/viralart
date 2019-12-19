@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux';
-import planet from './planet';
-import focusPoint from './focusPoint'
+
+import artworks from './artworks';
+import aaRelationships from './aaRelationships';
+import artists from './artists'
 
 export default combineReducers({
- focusPoint
+	artists,
+	artworks,
+	aaRelationships
 });

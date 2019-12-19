@@ -47,6 +47,7 @@ babel-node data/addArtistArtworkConnection.js
 
 
 ## To do
+- create initial store obj and pass it down to client
 - then we can start manipulating the charts d3.js
 - make db generation script data/init.js
 

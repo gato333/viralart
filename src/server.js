@@ -2,7 +2,8 @@ import express from 'express'
 import cookieParser from 'cookie-parser'
 import bodyParser from 'body-parser'
 import path from 'path'
-import { getArtistArtworkRels,
+import {
+	getArtistArtworkRels,
 	getArtworks,
 	getArtists } from '../data/db.js';
 

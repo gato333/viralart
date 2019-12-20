@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router';
+import { Link } from "react-router-dom";
 import { bindActionCreators } from 'redux';
 
 class Navigation extends Component {
@@ -11,7 +11,9 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation">
-      		Navigation
+          <Link to="/">Home</Link>
+          <br />
+          <Link to="/design">Design</Link>
       </div>
     )
   }

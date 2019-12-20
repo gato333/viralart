@@ -22,7 +22,8 @@ a Node.JS/React/Redux app that represents art in a 3d graphical interface (d3.js
 	```
 	for debugging purposes use command ``` npm run webpack-watch ```
 	which will recompile on detection of any file change.
-7. Once that successfully compiles the files into something the browser can understand, in the terminal we run: ``` npm start ```
+7. Once that successfully compiles the files into something the browser can understand, in the terminal we run: ``` npm run start ``` 
+
 8. go to url `localhost:6660` in a web browers you'll see a home page explainging the api calls on this mini backend server
 
 

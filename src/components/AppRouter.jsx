@@ -11,7 +11,6 @@ export default class AppRouter extends React.Component {
 	constructor(props) {
 	    super(props);
 	    this.store = props.store;
-	    console.log('app router constructor')
 	    // circular ref of data
 	    if( typeof document !== 'undefined' ){
 	    	var state = props.store.getState();

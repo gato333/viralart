@@ -9,7 +9,7 @@ module.exports = [{
     path: path.join(__dirname, 'build')
   },
   target: 'web',
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   node: {
     __dirname: false,
     __filename: false,
@@ -50,7 +50,7 @@ module.exports = [{
     path: path.resolve(__dirname, 'build')
   },
   target: 'node',
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   plugins: [
     new webpack.IgnorePlugin(/^pg-native$/)
   ],

@@ -25,7 +25,8 @@ module.exports = [{
       {
         test: /\.(js|jsx)$/,
         exclude: [
-          path.resolve(__dirname, 'node_modules')
+          path.resolve(__dirname, 'node_modules'),
+          path.resolve(__dirname, 'public')
         ],
         use: ['babel-loader']
       },
@@ -64,7 +65,10 @@ module.exports = [{
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: [
+          path.resolve(__dirname, 'node_modules'),
+          path.resolve(__dirname, 'public')
+        ],
         use: ['babel-loader']
       }
     ]

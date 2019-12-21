@@ -1,12 +1,7 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux';
+import { Component } from 'react'
 import ArtworksTest from './ArtworksTest.jsx';
 
-class DetailViewer extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default class DetailViewer extends Component {
   render() {
     return (
       <div className="detailViewer">
@@ -15,5 +10,3 @@ class DetailViewer extends Component {
     )
   }
 }
-
-export default connect()(DetailViewer);

@@ -52,6 +52,8 @@ babel-node data/addArtistArtworkConnection.js
 - make db generation script data/init.js
 
 ### To do: done
+- fix deployment to heroku, its throwing some errors that we were seeing locally when we were getting stuck with webpack 
+- make 3d sphere, and mouse actions for moving it 
 - fill out object for data manipulation, circular redux objs
 - import three.js instead of d3
 - create initial store obj and pass it down to client (server-side rendering)

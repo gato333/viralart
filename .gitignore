@@ -3,5 +3,6 @@ test_es7
 package 2.json
 webpack 3.js
 webpack.config 2.js
+creds.json
 package-lock.json
 build

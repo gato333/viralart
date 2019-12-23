@@ -27,6 +27,11 @@ a Node.JS/React/Redux app that represents art in a 3d graphical interface (d3.js
 8. go to url `localhost:6660` in a web browers you'll see a home page explainging the api calls on this mini backend server
 
 
+#### to push local db to heroku dbe
+heroku pg:push LOCAL_DB_NAME DATABASE_URL --app viralart
+
+#### to convert artsy json files to db artist, artworks and relations
+babel-node data/init.js
 
 #### to run ES7 code
 babel-node src_file_path
@@ -35,23 +40,20 @@ babel-node src_file_path
 babel src_file_path --out-dir es7code/
 
 #### to save local artsy extracted json files to our local db
-node data/fetchArtsyData.js 'artsy-url-collection-to-parse'
-
-#### to save local artsy extracted json files to our local db
-babel-node data/saveArtsyArtToDB.js
+node data/downloadArtsyData.js 'artsy-url-collection-to-parse'
 
 #### to put all artworks in db thru clarifai predict api, save results to db
-babel-node data/consumeClarifaiOnArtwork.js
+babel-node data/analyzeAllArtwork.js
 
 #### to connect matching artists and artworks already in db
-babel-node data/addArtistArtworkConnection.js
+babel-node data/addRelationsToExisting.js
 
 
 ## To do
 - then we can start manipulating the charts three.js
-- make db generation script data/init.js
 
 ### To do: done
+- make db generation script data/init.js
 - fix deployment to heroku, its throwing some errors that we were seeing locally when we were getting stuck with webpack 
 - make 3d sphere, and mouse actions for moving it 
 - fill out object for data manipulation, circular redux objs

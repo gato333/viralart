@@ -39,8 +39,14 @@ body {
     box-shadow: #00000036 1px 1px 8px 3px;
 }
 
-.detailViewer {
+.sampleHome .detailViewer {
     width: 40%;
+    opacity: 1;
+}
+
+.detailViewer {
+     width: 30%;
+    opacity: .6;
     max-height: 93%;
     overflow: scroll;
 

@@ -92,7 +92,7 @@ class GeometryTest extends React.Component {
 	render(){
 
 		return (
-			<div>
+			<div className="geometryTest">
 				<div 
 				onClick={this.onClick.bind(this)}
 				onMouseMove={this.onMouseMove.bind(this)}

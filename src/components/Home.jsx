@@ -8,6 +8,7 @@ export default class Home extends React.Component {
 		return (
 			<div>
 				<Navigation />
+				<DetailViewer />
 				<GeometryTest />
 		 	</div>
 		);

@@ -1,3 +1,5 @@
+export const DB_NULL = "'NULL'";
+
 export function stringOrNull(x){
 	if( !x || x == "")
 		return "'NULL'";

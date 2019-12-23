@@ -13,8 +13,19 @@
 
 import pg from 'pg';
 const Pool = pg.Pool;
-import creds from '../creds.json';
+var creds = require('../creds.json');
+if(process.env.ON_HEROKU)
+	creds = {
+		"user": process.env.DB_USER,
+		"host": process.env.DB_HOST,
+		"database": process.env.DB_DB,
+		"password": process.env.DB_PWD,
+		"port": process.env.DB_PORT
+	};
+
+
 const pool = new Pool(creds);
+
 
 
 export async function getArtworks() {
@@ -51,16 +62,16 @@ export async function addArtwork(arr){
   	console.log('addArtwork err:', e)
   }
 }
-
+// DB INIT ONLY
 export async function addArtworks(arr, less=false){
 	try {
 		var results = await pool.query(
 			'INSERT INTO artwork ' +
 			'("title", "price", "medium", ' +
 			(less ? '' : '"category", ') +
-			'"description", "imageurl", "artistname"' +
-			(less ? '' : ', "date"' ) +
-			') VALUES ' +  arr + ' RETURNING id;');
+			'"description", "imageurl", "artistname", ' +
+			(less ? '' : '"date" ,' ) +
+			'"color", "people", "tags") VALUES ' +  arr + ' RETURNING id;');
 		if(results.rows.length < 1 ) throw 'Failed to add rows to artworks db';
 		return results.rows.map( x => x.id );
 		await pool.end();
@@ -97,7 +108,7 @@ export async function addArtist(arr){
   }
 }
 
-
+// DB INIT ONLY 
 export async function addArtists(arr){
 	try {
 		var results = await pool.query(
@@ -126,6 +137,21 @@ export async function addArtistArtworkRel(artist_id, artwork_id){
   	return false;
   }
 }
+// DB INIT ONLY 
+export async function addArtistArtworkRels(arr){
+	try {
+		var results = await pool.query(
+			'INSERT INTO artist_artwork ' +
+			'("artistid", "artworkid") ' +
+			'VALUES ' +  arr + ';');
+		if(results.rowCount < 1) throw 'Failed to add rows to artist_artwork db';
+		return results.rowCount;
+		await pool.end();
+	} catch (e) {
+  	console.log('addArtistArtworkRels err:', e)
+  }
+}
+
 
 export async function getArtistArtworkRels(){
 	try {

@@ -7,7 +7,7 @@ import Navigation from './Navigation.jsx';
 export default class SampleHome extends React.Component { 
 	render(){
 		return(
-			<div>
+			<div className="sampleHome">
 				<WorldExplorer />
 				<DetailViewer />
 				<Navigation />

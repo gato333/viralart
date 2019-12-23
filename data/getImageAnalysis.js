@@ -81,7 +81,7 @@ async function getImageAnalysis(image_url){
         return analysisObj
       }
     } catch (error) {
-      console.log('Clarifai API error:', error)
+      console.log('Clarifai API error:', error.response.status,  error.response.statusText)
       return empty;
     }
 }

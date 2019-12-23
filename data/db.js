@@ -15,14 +15,7 @@ import pg from 'pg';
 const Pool = pg.Pool;
 var creds = require('../creds.json');
 if(process.env.ON_HEROKU)
-	creds = {
-		"user": process.env.DB_USER,
-		"host": process.env.DB_HOST,
-		"database": process.env.DB_DB,
-		"password": process.env.DB_PWD,
-		"port": process.env.DB_PORT
-	};
-
+	creds = { connectionString: process.env.DATABASE_URL };
 
 const pool = new Pool(creds);
 

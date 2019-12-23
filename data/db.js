@@ -12,10 +12,12 @@
 
 
 import pg from 'pg';
-const Pool = pg.Pool;
+var Pool = pg.Pool;
 var creds = require('../creds.json');
-if(process.env.ON_HEROKU)
+if(process.env.ON_HEROKU){
+	Pool = pg.Client;
 	creds = { connectionString: process.env.DATABASE_URL };
+}
 
 const pool = new Pool(creds);
 

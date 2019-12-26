@@ -7,12 +7,12 @@
 //
 //   #################################################
 
-import { getArtworks, updateArtwork } from './db.js';
+import { getArtworksWithoutClarifai, updateArtwork } from './db.js';
 import {stringOrNull} from './util.js';
 import getImageAnalysis from './getImageAnalysis';
 
 async function main(){
-	var artworks = (await getArtworks());
+	var artworks = (await getArtworksWithoutClarifai());
 	console.log('artwork before: ', artworks.map(x => x.id));
 
 	for(var i = 0; i < artworks.length; i++){

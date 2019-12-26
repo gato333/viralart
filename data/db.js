@@ -27,6 +27,16 @@ export async function getArtworks() {
   }
 }
 
+export async function getArtworksWithoutClarifai() {
+	try {
+	  const results = await pool.query("SELECT * FROM artwork WHERE color= 'NULL' AND imageurl != 'NULL';");
+	  return results.rows;
+	  await pool.end();
+  } catch (e) {
+  	console.log('getArtworksWithoutClarifai err:', e)
+  }
+}
+
 export async function getArtists() {
 	try {
 	  const results = await pool.query('SELECT * FROM artist;');

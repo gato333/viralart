@@ -21,9 +21,10 @@
 
 
 const Clarifai = require('clarifai');
-const app = new Clarifai.App({
- apiKey: 'fead81ba20fe4dc9a67acabe1438e731'
-});
+var key = require('../creds.json');
+if(process.env.CLARIFAI_KEY) key = process.env.CLARIFAI_KEY;
+else key = key.clarifai;
+const app = new Clarifai.App({ apiKey: key });
 
 const empty = {
   primaryColor : {

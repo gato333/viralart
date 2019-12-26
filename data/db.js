@@ -16,7 +16,8 @@ var Pool = pg.Pool;
 var creds = require('../creds.json');
 if(process.env.DATABASE_URL)
 	creds = { connectionString: process.env.DATABASE_URL };
-
+else
+	creds = creds.postgres
 const pool = new Pool(creds);
 
 

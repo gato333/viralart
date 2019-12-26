@@ -19,7 +19,6 @@
 //        }
 //   #################################################
 
-
 const Clarifai = require('clarifai');
 var key = require('../creds.json');
 if(process.env.CLARIFAI_KEY) key = process.env.CLARIFAI_KEY;
@@ -83,12 +82,12 @@ async function getImageAnalysis(image_url){
       }
     } catch (error) {
       console.log('Clarifai API error:', error.response.status,  error.response.statusText)
+      console.log(image_url);
       return empty;
     }
 }
 
 export default getImageAnalysis;
-
 
 async function test(){
   var x = await getImageAnalysis("http://files.artsy.net/images/earlystudiesofnature.png");

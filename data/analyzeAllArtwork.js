@@ -7,10 +7,7 @@
 //
 //   #################################################
 
-import {
-	getArtworks,
-	updateArtwork
-} from './db.js';
+import { getArtworks, updateArtwork } from './db.js';
 import {stringOrNull} from './util.js';
 import getImageAnalysis from './getImageAnalysis';
 
@@ -27,10 +24,7 @@ async function main(){
 		var res = await updateArtwork(artwork.id, updateObj);
 		console.log(res ? 'successfully added image info of artwork: ': 'failed to update: ', artwork.id);
 	}
-
-	console.log('artwork after: ', (await getArtworks()))
 	return;
 }
 
 main();
-

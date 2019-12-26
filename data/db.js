@@ -10,17 +10,12 @@
 //				addArtists()
 //   #################################################
 
-
 import pg from 'pg';
 var Pool = pg.Pool;
 var creds = require('../creds.json');
-if(process.env.DATABASE_URL)
-	creds = { connectionString: process.env.DATABASE_URL };
-else
-	creds = creds.postgres
+if(process.env.DATABASE_URL) creds = { connectionString: process.env.DATABASE_URL };
+else creds = creds.postgres;
 const pool = new Pool(creds);
-
-
 
 export async function getArtworks() {
 	try {
@@ -41,7 +36,6 @@ export async function getArtists() {
   	console.log('getArtworks err:', e)
   }
 }
-
 
 export async function addArtwork(arr){
 	try {
@@ -73,7 +67,6 @@ export async function addArtworks(arr, less=false){
   	console.log('addArtworks err:', e)
   }
 }
-
 //updateStr must be in format 'key=value, key=value'
 export async function updateArtwork(artwork_id, updateStr){
 	try {
@@ -101,7 +94,6 @@ export async function addArtist(arr){
   	console.log('addArtist err:', e)
   }
 }
-
 // DB INIT ONLY 
 export async function addArtists(arr){
 	try {
@@ -146,7 +138,6 @@ export async function addArtistArtworkRels(arr){
   }
 }
 
-
 export async function getArtistArtworkRels(){
 	try {
 		var results = await pool.query('SELECT * FROM artist_artwork;');
@@ -156,9 +147,6 @@ export async function getArtistArtworkRels(){
   	console.log('getArtistArtworkRels err:', e)
   }
 }
-
-
-
 
 
 async function test(){

@@ -67,6 +67,10 @@ class GeometryTest extends React.Component {
 	    this.animate();
 	}
 
+	componentWillUnmount() {
+		this.mount.removeChild(this.mount.children[0]);
+  	}
+
 	animate(){
 		requestAnimationFrame( this.animate );
 		if(this.state.watchCursor) this.triggerRotation();

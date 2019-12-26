@@ -37,8 +37,8 @@ export default class AppRouter extends React.Component {
 		    <Provider store={this.store}>
 		      <Router>
 		      	<Switch>
-			        <Route exact path="/" component={Home} /> 
 			        <Route path='/design' component={SampleHome} />
+			        <Route path={["/step", "/"]} component={Home} /> 
 			    </Switch>
 		      </Router>
 		    </Provider>

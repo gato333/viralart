@@ -11,7 +11,9 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation">
-          <Link to="/">Home</Link>
+          <Link to="/">Newest</Link>
+          <br />
+          <Link to="/step/1">Step 1</Link>
           <br />
           <Link to="/design">Design</Link>
       </div>

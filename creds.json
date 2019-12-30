@@ -1,1 +1,10 @@
-{}
+{
+	"postgres": {
+	  "user": null,
+	  "host": null,
+	  "database": null,
+	  "password": null,
+	  "port": null
+	},
+	"clarifai": null
+}

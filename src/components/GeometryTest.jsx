@@ -19,7 +19,6 @@ class GeometryTest extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			initialized: false,
 			watchCursor: true,
 			x: 0,
 			y: 0

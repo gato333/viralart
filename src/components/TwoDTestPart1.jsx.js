@@ -19,7 +19,7 @@ import { connect } from 'react-redux';
 const colorList = [ 0xff0000, 0xff7c00, 0xffff00, 0x7cff00, 0x00ff00, 0x00ff7c, 0x00ffff, 0x007cff, 0x0000ff, 0x7c00ff, 0xff00ff, 0xff007c ];
 var scene, camera, renderer, light, boxes = [], spheres = [];
 
-class TwoDTest extends React.Component { 
+class TwoDTestPart1 extends React.Component { 
 	constructor(props){
 		super(props);
 		this.generateTexture = this.generateTexture.bind(this);
@@ -89,13 +89,13 @@ class TwoDTest extends React.Component {
 			if(max == r) xVal = (g/255) * 60;
 			else if(max == g) xVal = ((b/255) * 60) + 60;
 			xVal -= 85; // offest for enviornment
-			//var yVal = -50; min val, max val = 50
+			var yVal = -50;// min val, max val = 50
 
-			var { h, s, l } = material.color.getHSL();
-			var yVal = l * 100 - 50; 
-			var collisions = spheres.filter( x => x.position.x >= xVal - 5 && x.position.x <= xVal + 5
-				&& x.position.y <= yVal + 5 && x.position.y >= yVal -5 );
-			if( collisions.length > 0 ) xVal = Math.max( ...collisions.map( x => x.position.x )) + 6;
+			//var { h, s, l } = material.color.getHSL();
+			//var yVal = l * 100 - 50; 
+			var collisions = spheres.filter( x => x.position.x >= xVal - 5 && x.position.x <= xVal + 5 );
+			//	&& x.position.y <= yVal + 5 && x.position.y >= yVal -5 );
+			if( collisions.length > 0 ) yVal = Math.max( ...collisions.map( x => x.position.y )) + 6;
 			
 			sphere.position.set(xVal, yVal, -117);
 			sphere.castShadow = true;
@@ -159,4 +159,4 @@ function mapStateToProps(state){
 	return { artworks: state.artworks }
 }
 
-export default connect(mapStateToProps)(TwoDTest);
+export default connect(mapStateToProps)(TwoDTestPart1);

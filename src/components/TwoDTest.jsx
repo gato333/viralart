@@ -14,15 +14,17 @@ import {
 	DoubleSide,
 	Vector3,
 	Texture } from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { connect } from 'react-redux';
 
 const colorList = [ 0xff0000, 0xff7c00, 0xffff00, 0x7cff00, 0x00ff00, 0x00ff7c, 0x00ffff, 0x007cff, 0x0000ff, 0x7c00ff, 0xff00ff, 0xff007c ];
-var scene, camera, renderer, light, boxes = [], spheres = [];
+var scene, camera, renderer, light, controls, boxes = [], spheres = [];
 
 class TwoDTest extends React.Component { 
 	constructor(props){
 		super(props);
 		this.generateTexture = this.generateTexture.bind(this);
+		this.animate = this.animate.bind(this);
 	}
 
 	componentDidMount(){
@@ -31,6 +33,8 @@ class TwoDTest extends React.Component {
 		renderer = new WebGLRenderer();
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		this.mount.appendChild( renderer.domElement );
+		controls = new OrbitControls( camera, renderer.domElement );
+		controls.update();
 
 		// Light
 		light = new PointLight( 0xffffff);
@@ -91,18 +95,33 @@ class TwoDTest extends React.Component {
 			xVal -= 85; // offest for enviornment
 			//var yVal = -50; min val, max val = 50
 
-			var { h, s, l } = material.color.getHSL();
+			var hsl, {h, s, l } = material.color.getHSL(hsl);
 			var yVal = l * 100 - 50; 
-			var collisions = spheres.filter( x => x.position.x >= xVal - 5 && x.position.x <= xVal + 5
-				&& x.position.y <= yVal + 5 && x.position.y >= yVal -5 );
-			if( collisions.length > 0 ) xVal = Math.max( ...collisions.map( x => x.position.x )) + 6;
-			
+			var initXVal = xVal; 
+			console.log( i, xVal, yVal, spheres.map( x => [x.position.x, x.position.y] ));
+			for( var collisions = spheres.filter( x => x.position.x >= xVal - 6 && x.position.x <= xVal + 6 && x.position.y <= yVal + 6 && x.position.y >= yVal - 6);
+				collisions.length > 0;
+			){
+				console.log(xVal, yVal, collisions);
+				xVal = (((Math.max( ...collisions.map( x => x.position.x )) + 7) + 85) % 165) - 85
+				collisions = spheres.filter( x => x.position.x >= xVal - 6 && x.position.x <= xVal + 6 && x.position.y <= yVal + 6 && x.position.y >= yVal - 6);
+				if(xVal < initXVal && xVal >= initXVal - 6 ) yVal -= 6, xVal = initXVal; 
+			}
+			if(xVal > 80) xVal -= 165
 			sphere.position.set(xVal, yVal, -117);
 			sphere.castShadow = true;
 			spheres.push(sphere);
 			scene.add( sphere );
 		}
 	
+		renderer.render( scene, camera );
+		this.animate();
+	}
+
+
+	animate() {
+		requestAnimationFrame( this.animate );
+		controls.update();
 		renderer.render( scene, camera );
 	}
 
@@ -135,7 +154,7 @@ class TwoDTest extends React.Component {
 
 	onClick(){
 		console.log(boxes);
-		renderer.render( scene, camera );
+		//renderer.render( scene, camera );
 	}
 
 

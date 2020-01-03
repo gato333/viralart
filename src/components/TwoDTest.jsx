@@ -30,10 +30,12 @@ class TwoDTest extends React.Component {
 	componentDidMount(){
 		scene = new Scene();
 		camera = new PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+		scene.add(camera);
 		renderer = new WebGLRenderer();
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		this.mount.appendChild( renderer.domElement );
 		controls = new OrbitControls( camera, renderer.domElement );
+		controls.target.set( 0, 5, -80 ); 
 		controls.update();
 
 		// Light

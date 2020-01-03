@@ -51,12 +51,14 @@ babel-node data/addRelationsToExisting.js
 
 ## To do
 - perfect color map, wrapping and incorporating satruation aswell as lightness for mapping, we are doing only hue and lightness right now
-- then we can start manipulating the charts three.js
+- transition to 3d obj mapping from the 2d tests
 
 ### To do: done
-- color map tests 
-- figure out the orbital controls
-- created Three.js/React tooltip for active artwork
+- test out flat color mapping 
+- implement the orbital controls
+- implemented color gradiant for rainbow spectrum
+- created Three.js/React tooltip for active artwork display
+- test our sphere in space, with mouse related rotation
 - make db generation script data/init.js
 - fix deployment to heroku, its throwing some errors that we were seeing locally when we were getting stuck with webpack 
 - make 3d sphere, and mouse actions for moving it 

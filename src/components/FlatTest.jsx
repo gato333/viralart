@@ -10,6 +10,7 @@ import {
 	MeshPhysicalMaterial,
 	SphereGeometry } from 'three';
 import { connect } from 'react-redux';
+import ListArtworksTest from './ListArtworksTest.jsx';
 
 const colorList = [ 0xff0000, 0xff7c00, 0xffff00, 0x7cff00, 0x00ff00, 0x00ff7c, 0x00ffff, 0x007cff, 0x0000ff, 0x7c00ff, 0xff00ff, 0xff007c ];
 var scene, camera, renderer, light, boxes = [], spheres = [];
@@ -90,10 +91,13 @@ class FlatTest extends React.Component {
 	render(){
 
 		return (
-			<div className="flatTest">
-				<div
-				onClick={this.onClick.bind(this)}
-				ref={ref => (this.mount = ref)} />
+			<div>
+				<ListArtworksTest /> 
+				<div className="flatTest">
+					<div
+					onClick={this.onClick.bind(this)}
+					ref={ref => (this.mount = ref)} />
+				</div>
 			</div>
 		);
 	}

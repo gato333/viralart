@@ -46,10 +46,10 @@ body {
 
 .detailViewer {
     width: 30%;
-    max-height: 200px;
+    max-height: 400px;
     overflow: scroll;
 
-    img.main {
+    img, img.main {
     	width: 100%;
     }
     .otherWork img {

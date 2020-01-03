@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 function Artwork(props) {
   return (
@@ -8,12 +7,12 @@ function Artwork(props) {
   );
 }
 
-class ArtworksTest extends React.Component { 
+class ListArtworksTest extends React.Component { 
 	render(){
 		var artworks = Object.keys(this.props.artworks)
 			.map( id => <Artwork title={this.props.artworks[id].title} /> );
 		return (
-			<div>
+			<div className="detailViewer">
 				<ul>
 					{artworks}
 				</ul>
@@ -29,4 +28,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(ArtworksTest);
+export default connect(mapStateToProps)(ListArtworksTest);

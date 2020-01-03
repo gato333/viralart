@@ -13,6 +13,7 @@ import {
 	MeshBasicMaterial,
 	ImageUtils } from 'three';
 import { connect } from 'react-redux';
+import ListArtworksTest from './ListArtworksTest.jsx';
 var scene, camera, renderer, light, sphere, x, y;
 
 class GeometryTest extends React.Component { 
@@ -95,11 +96,14 @@ class GeometryTest extends React.Component {
 	render(){
 
 		return (
-			<div className="geometryTest">
-				<div 
-				onClick={this.onClick.bind(this)}
-				onMouseMove={this.onMouseMove.bind(this)}
-				ref={ref => (this.mount = ref)} />
+			<div>
+				<ListArtworksTest />
+				<div className="geometryTest">
+					<div 
+					onClick={this.onClick.bind(this)}
+					onMouseMove={this.onMouseMove.bind(this)}
+					ref={ref => (this.mount = ref)} />
+				</div>
 			</div>
 		);
 	}

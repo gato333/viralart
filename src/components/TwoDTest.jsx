@@ -13,22 +13,29 @@ import {
 	PlaneGeometry,
 	DoubleSide,
 	Vector3,
-	Texture } from 'three';
+	Texture,
+	Raycaster,
+	Vector2 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { connect } from 'react-redux';
+import { addObjRefToArtwork } from '../actions/artworks.js';
+import { setActiveArtwork, clearActiveArtwork } from '../actions/activeArtwork.js';
+import ActiveArtworkViewer from './ActiveArtworkViewer.jsx';
 
 const colorList = [ 0xff0000, 0xff7c00, 0xffff00, 0x7cff00, 0x00ff00, 0x00ff7c, 0x00ffff, 0x007cff, 0x0000ff, 0x7c00ff, 0xff00ff, 0xff007c ];
-var scene, camera, renderer, light, controls, boxes = [], spheres = [];
+var scene, camera, renderer, light, controls, boxes = [], spheres = [], raycaster, mouse = new Vector2();
 
 class TwoDTest extends React.Component { 
 	constructor(props){
 		super(props);
 		this.generateTexture = this.generateTexture.bind(this);
 		this.animate = this.animate.bind(this);
+		this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
 	}
 
 	componentDidMount(){
 		scene = new Scene();
+		raycaster = new Raycaster();
 		camera = new PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 		scene.add(camera);
 		renderer = new WebGLRenderer();
@@ -100,11 +107,11 @@ class TwoDTest extends React.Component {
 			var hsl, {h, s, l } = material.color.getHSL(hsl);
 			var yVal = l * 100 - 50; 
 			var initXVal = xVal; 
-			console.log( i, xVal, yVal, spheres.map( x => [x.position.x, x.position.y] ));
+			//console.log( i, xVal, yVal, spheres.map( x => [x.position.x, x.position.y] ));
 			for( var collisions = spheres.filter( x => x.position.x >= xVal - 6 && x.position.x <= xVal + 6 && x.position.y <= yVal + 6 && x.position.y >= yVal - 6);
 				collisions.length > 0;
 			){
-				console.log(xVal, yVal, collisions);
+				//console.log(xVal, yVal, collisions);
 				xVal = (((Math.max( ...collisions.map( x => x.position.x )) + 7) + 85) % 165) - 85
 				collisions = spheres.filter( x => x.position.x >= xVal - 6 && x.position.x <= xVal + 6 && x.position.y <= yVal + 6 && x.position.y >= yVal - 6);
 				if(xVal < initXVal && xVal >= initXVal - 6 ) yVal -= 6, xVal = initXVal; 
@@ -113,9 +120,11 @@ class TwoDTest extends React.Component {
 			sphere.position.set(xVal, yVal, -117);
 			sphere.castShadow = true;
 			spheres.push(sphere);
+			this.props.addObjRefToArtwork(artworkMini[i], sphere.uuid);
 			scene.add( sphere );
 		}
 	
+		document.addEventListener( 'mousemove', this.onDocumentMouseMove, false );
 		renderer.render( scene, camera );
 		this.animate();
 	}
@@ -124,6 +133,21 @@ class TwoDTest extends React.Component {
 	animate() {
 		requestAnimationFrame( this.animate );
 		controls.update();
+
+		raycaster.setFromCamera( mouse, camera );
+		var intersects = raycaster.intersectObjects( spheres );
+		if(intersects.length > 0) {
+			var id = intersects[0].object.uuid;
+			var active_artwork = Object.keys(this.props.artworks).find( xid => this.props.artworks[xid].objRef == id );
+
+			this.props.setActiveArtwork(active_artwork);
+			var originalColor = intersects[0].object.material.color;
+			intersects[0].object.material.color.set( 0xff0000 );
+			setTimeout(() => {
+				intersects[0].object.material.color.set( originalColor);
+			}, 1000);
+		}
+
 		renderer.render( scene, camera );
 	}
 
@@ -154,9 +178,12 @@ class TwoDTest extends React.Component {
 		return canvas;
 	}
 
+	onDocumentMouseMove( event ) {
+		mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+		mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+	}
+
 	onClick(){
-		console.log(boxes);
-		//renderer.render( scene, camera );
 	}
 
 
@@ -167,10 +194,13 @@ class TwoDTest extends React.Component {
 	render(){
 
 		return (
-			<div className="twoDTest">
-				<div
-				onClick={this.onClick.bind(this)}
-				ref={ref => (this.mount = ref)} />
+			<div>
+				<ActiveArtworkViewer />
+				<div className="twoDTest">
+					<div
+					onClick={this.onClick.bind(this)}
+					ref={ref => (this.mount = ref)} />
+				</div>
 			</div>
 		);
 	}
@@ -180,4 +210,6 @@ function mapStateToProps(state){
 	return { artworks: state.artworks }
 }
 
-export default connect(mapStateToProps)(TwoDTest);
+const mapDispatchToProps = { addObjRefToArtwork, setActiveArtwork, clearActiveArtwork };
+
+export default connect(mapStateToProps, mapDispatchToProps)(TwoDTest);

@@ -42,13 +42,13 @@ body {
 
 .sampleHome .detailViewer {
     width: 40%;
-    max-height: 94%;
 }
 
 .detailViewer {
     width: 30%;
-    max-height: 400px;
-    overflow: scroll;
+    max-height: 94%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     img, img.main {
     	width: 100%;
@@ -67,6 +67,14 @@ body {
 .navigation {
 	width: 100px;
     right: 0;
+    a div {
+        padding: 10px;
+        background: #6c6b6a;
+        border-radius: 5px;
+        color: white;
+        margin: 5px 0;
+        text-align: center;
+    }
 }
 
 // 

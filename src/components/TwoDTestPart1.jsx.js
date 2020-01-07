@@ -108,8 +108,8 @@ class TwoDTestPart1 extends React.Component {
 	}
 
 	generateTexture(hex) {
-		var width = 15;
-		var height = 100;
+		var width = 8;
+		var height = 64;
 		hex = hex.toString(16);
 		var color = "#" + ("000000".substr(0, 6 - hex.length) + hex);
 

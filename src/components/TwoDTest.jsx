@@ -108,7 +108,8 @@ class TwoDTest extends React.Component {
 			xVal -= 85; // offest for enviornment
 			//var yVal = -50; min val, max val = 50
 
-			var hsl, {h, s, l } = material.color.getHSL(hsl);
+			var hsl;
+			var { h, s, l } = material.color.getHSL(hsl);
 			var yVal = l * 100 - 50; 
 			var initXVal = xVal; 
 			//console.log( i, xVal, yVal, spheres.map( x => [x.position.x, x.position.y] ));
@@ -167,8 +168,8 @@ class TwoDTest extends React.Component {
 	}
 
 	generateTexture(hex) {
-		var width = 15;
-		var height = 100;
+		var width = 8;
+		var height = 64;
 		hex = hex.toString(16);
 		var color = "#" + ("000000".substr(0, 6 - hex.length) + hex);
 

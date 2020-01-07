@@ -1,18 +1,25 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import WorldExplorer from './WorldExplorer.jsx';
-import DetailViewer from './DetailViewer.jsx';
 import Navigation from './Navigation.jsx';
 
-export default class SampleHome extends React.Component { 
-	render(){
-		return(
-			<div className="sampleHome">
-				<WorldExplorer />
-				<DetailViewer />
-				<Navigation />
-		 	</div>
-		);
-	}
-}
+export default () => (
+	<div className="sampleHome">
+		<div className="worldExplorer">
+	      	<div className="world" />
+	     </div>
+		<Navigation />
+		<div className="detailViewer">
+	  		<img className='main' src="http://files.artsy.net/images/earlystudiesofnature.png" />
+			<p> Work Title </p>
+			<p className="small"> Artist Name </p>
+			<p className="small"> medium </p>
+			Explore other Work
+			<div className="otherWork">
+				<img src="http://files.artsy.net/images/earlystudiesofnature.png" />
+				<img src="http://files.artsy.net/images/earlystudiesofnature.png" />
+				<img src="http://files.artsy.net/images/earlystudiesofnature.png" />
+				<img src="http://files.artsy.net/images/earlystudiesofnature.png" />
+			</div>
+	    </div>
+ 	</div>
+);
 

@@ -42,7 +42,7 @@ body {
 
 .sampleHome .detailViewer {
     width: 40%;
-    opacity: 1;
+    max-height: 94%;
 }
 
 .detailViewer {
@@ -70,7 +70,7 @@ body {
 }
 
 // 
-// FOR D3
+// FOR THREEJS
 // 
 
 canvas { width: 100%; height: 100% }

@@ -1,18 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, StaticRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, StaticRouter, Route, Switch  } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { setArtists } from '../actions/artists';
 import { setArtworks } from '../actions/artworks';
 import Home from './Home.jsx';
 import SampleHome from './design/SampleHome.jsx';
 
+const Routes = () => (
+	<Switch>
+  		<Route path="/design" component={SampleHome} />
+  		<Route path="/step" component={Home} /> 
+  		<Route path="*" component={Home} />
+    </Switch>
+);
+
 export default class AppRouter extends React.Component {
 	constructor(props) {
 	    super(props);
-	    this.store = props.store;
+	    this.serverSideRendering = ( typeof document === 'undefined' );
 	    // circular ref of data
-	    if( typeof document !== 'undefined' ){
+	    if( !this.serverSideRendering ){
 	    	var state = props.store.getState();
 	    	var linkedArtists = state.artists;
 			var linkedArtworks = state.artworks;
@@ -32,15 +40,17 @@ export default class AppRouter extends React.Component {
 	}
 
 	render() {
-		var Router = typeof document !== 'undefined' ? BrowserRouter : StaticRouter;
 		return (
-		    <Provider store={this.store}>
-		      <Router>
-		      	<Switch>
-			        <Route path='/design' component={SampleHome} />
-			        <Route path={["/step", "/"]} component={Home} /> 
-			    </Switch>
-		      </Router>
+		    <Provider store={this.props.store}>
+		    	{ !this.serverSideRendering ? 
+		    		<BrowserRouter>
+				      	<Routes />
+				     </BrowserRouter>
+				:
+					<StaticRouter location={this.props.url} context={{}}>
+				      	<Routes />
+				    </StaticRouter>
+		    	}
 		    </Provider>
 		);
 	}

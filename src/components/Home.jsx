@@ -7,13 +7,14 @@ import TwoDTest from './TwoDTest.jsx';
 import TwoDTestPart1 from './TwoDTestPart1.jsx';
 
 export default ({ match }) => (
-	<div>
+	<div className="home">
 		<Navigation />
-		<Switch>
-			<Route path={`${match.path}/1`} component={GeometryTest} />
-			<Route path={`${match.path}/2`} component={FlatTest} />
-			<Route path={`${match.path}/3`} component={TwoDTestPart1} />
-			<Route path={[`${match.path}/4`, `${match.path}`]} component={TwoDTest} />
- 		</Switch>
+		<div>
+			<Route exact path={`${match.path}/1`} component={GeometryTest} />
+			<Route exact path={`${match.path}/2`} component={FlatTest} />
+			<Route exact path={`${match.path}/3`} component={TwoDTestPart1} />
+			<Route exact path={`${match.path}/4`} component={TwoDTest} />
+			<Route component={TwoDTest} />
+ 		</div>
  	</div>
 );

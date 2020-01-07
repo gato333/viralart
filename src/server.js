@@ -67,13 +67,14 @@ app.get( "/*", async (req, res) => {
 			    return map;
 			}, {});
 		} catch (e){
-			console.log('date hydrate failure: ', e)
+			console.log('data hydrate failure: ', e)
 		}
+		console.log('normal req', req.url)
 		let preloadedState = { artists, artworks, aaRelationships };
 		const store = configureStore(preloadedState);
 		const finalState = store.getState();
-		const app = renderToString(<AppRouter store={store} />); 
+		const app = renderToString(<AppRouter store={store} url={req.originalUrl} />); 
 		return res.status(200).send(renderHTMLwithInject(app, finalState))
-
 	}
 });
+

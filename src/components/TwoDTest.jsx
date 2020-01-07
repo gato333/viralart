@@ -136,8 +136,11 @@ class TwoDTest extends React.Component {
 	animate() {
 		requestAnimationFrame( this.animate );
 		controls.update();
-		var activeArtworkSphere = this.props.activeArtwork ?
-			spheres.find( sph => sph.uuid === this.props.activeArtwork.objRef ) : null;
+		var activeArtworkSphereIndex = this.props.activeArtwork ?
+			spheres.findIndex( sph => sph.uuid === this.props.activeArtwork.objRef ) : -1;
+
+		if(activeArtworkSphereIndex > -1)
+			spheres[activeArtworkSphereIndex].material.color.set( 0xff0000 ); 
 
 		if(this.state.hoverWatch){
 			raycaster.setFromCamera( mouse, camera );
@@ -145,23 +148,16 @@ class TwoDTest extends React.Component {
 			if(intersects.length > 0) {
 				var uuid = intersects[0].object.uuid;
 				var active_artwork_uuid = Object.keys(this.props.artworks).find( xid => this.props.artworks[xid].objRef == uuid );
-				if (!activeArtworkSphere)
+				if (activeArtworkSphereIndex <= -1 )
 					this.props.setActiveArtwork(active_artwork_uuid);
-				else if(activeArtworkSphere && activeArtworkSphere.uuid != uuid){
+				else if(activeArtworkSphereIndex > -1 && spheres[activeArtworkSphereIndex].uuid != uuid){
 					var colorHex = parseInt(this.props.activeArtwork.color.replace(/^#/, ''), 16);
-					console.log(activeArtworkSphere.material.color);
-					activeArtworkSphere.material.color.setHex( colorHex );
-					console.log(activeArtworkSphere.material.color);
-					activeArtworkSphere.material.color.set( colorHex );
-					console.log(activeArtworkSphere.material.color);
-					activeArtworkSphere.geometry.colorsNeedUpdate = true; 
+					spheres[activeArtworkSphereIndex].material.color.set( colorHex );
 					this.props.setActiveArtwork(active_artwork_uuid); 
 				}
 
 			}
 		}
-
-		if(activeArtworkSphere) activeArtworkSphere.material.color.set( 0xff0000 ); 
 
 		renderer.render( scene, camera );
 	}

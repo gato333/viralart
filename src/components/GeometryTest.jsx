@@ -25,6 +25,7 @@ class GeometryTest extends React.Component {
 			y: 0
 		}
 		this.animate = this.animate.bind(this);
+		this.keyUpDetection = this.keyUpDetection.bind(this);
 	}
 
 	componentDidMount(){
@@ -64,6 +65,8 @@ class GeometryTest extends React.Component {
 		skyBox.position.set(0, 0, 0);
 		scene.add( skyBox );
 
+		document.body.onkeyup = this.keyUpDetection;
+
 	    this.animate();
 	}
 
@@ -89,8 +92,9 @@ class GeometryTest extends React.Component {
 		else if (this.state.y < MID_HEIGHT - 50 )  sphere.rotation.x += 0.005;
 	}
 
-	onClick(t){
-		this.setState( prev => new Object({ watchCursor: !prev.watchCursor }) )
+	keyUpDetection(event){
+		if(event.keyCode == 32)
+			this.setState( prev => new Object({ watchCursor: !prev.watchCursor }) )
 	}
 
 	render(){
@@ -100,7 +104,6 @@ class GeometryTest extends React.Component {
 				<ListArtworksTest />
 				<div className="geometryTest">
 					<div 
-					onClick={this.onClick.bind(this)}
 					onMouseMove={this.onMouseMove.bind(this)}
 					ref={ref => (this.mount = ref)} />
 				</div>

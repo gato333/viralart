@@ -33,6 +33,7 @@ class TwoDTest extends React.Component {
 		}
 		this.generateTexture = this.generateTexture.bind(this);
 		this.animate = this.animate.bind(this);
+		this.keyUpDetection = this.keyUpDetection.bind(this);
 		this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
 	}
 
@@ -128,6 +129,8 @@ class TwoDTest extends React.Component {
 		}
 	
 		document.addEventListener( 'mousemove', this.onDocumentMouseMove, false );
+		document.body.onkeyup = this.keyUpDetection;
+
 		renderer.render( scene, camera );
 		this.animate();
 	}
@@ -194,10 +197,10 @@ class TwoDTest extends React.Component {
 		mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 	}
 
-	onClick(){
-		this.setState({ hoverWatch: !this.state.hoverWatch });
+	keyUpDetection(event){
+		if(event.keyCode == 32)
+			this.setState({ hoverWatch: !this.state.hoverWatch });
 	}
- 
 
 	componentWillUnmount() {
 		this.mount.removeChild(this.mount.children[0]);
@@ -209,9 +212,7 @@ class TwoDTest extends React.Component {
 			<div>
 				<ActiveArtworkViewer />
 				<div className="twoDTest">
-					<div
-					onClick={this.onClick.bind(this)}
-					ref={ref => (this.mount = ref)} />
+					<div ref={ref => (this.mount = ref)} />
 				</div>
 			</div>
 		);

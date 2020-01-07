@@ -135,7 +135,6 @@ class TwoDTestPart1 extends React.Component {
 	}
 
 	onClick(){
-		console.log(boxes);
 		renderer.render( scene, camera );
 	}
 

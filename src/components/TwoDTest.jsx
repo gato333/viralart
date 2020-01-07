@@ -28,6 +28,9 @@ var scene, camera, renderer, light, controls, boxes = [], spheres = [], raycaste
 class TwoDTest extends React.Component { 
 	constructor(props){
 		super(props);
+		this.state = {
+			hoverWatch: true 
+		}
 		this.generateTexture = this.generateTexture.bind(this);
 		this.animate = this.animate.bind(this);
 		this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
@@ -133,20 +136,32 @@ class TwoDTest extends React.Component {
 	animate() {
 		requestAnimationFrame( this.animate );
 		controls.update();
+		var activeArtworkSphere = this.props.activeArtwork ?
+			spheres.find( sph => sph.uuid === this.props.activeArtwork.objRef ) : null;
 
-		raycaster.setFromCamera( mouse, camera );
-		var intersects = raycaster.intersectObjects( spheres );
-		if(intersects.length > 0) {
-			var id = intersects[0].object.uuid;
-			var active_artwork = Object.keys(this.props.artworks).find( xid => this.props.artworks[xid].objRef == id );
+		if(this.state.hoverWatch){
+			raycaster.setFromCamera( mouse, camera );
+			var intersects = raycaster.intersectObjects( spheres );
+			if(intersects.length > 0) {
+				var uuid = intersects[0].object.uuid;
+				var active_artwork_uuid = Object.keys(this.props.artworks).find( xid => this.props.artworks[xid].objRef == uuid );
+				if (!activeArtworkSphere)
+					this.props.setActiveArtwork(active_artwork_uuid);
+				else if(activeArtworkSphere && activeArtworkSphere.uuid != uuid){
+					var colorHex = parseInt(this.props.activeArtwork.color.replace(/^#/, ''), 16);
+					console.log(activeArtworkSphere.material.color);
+					activeArtworkSphere.material.color.setHex( colorHex );
+					console.log(activeArtworkSphere.material.color);
+					activeArtworkSphere.material.color.set( colorHex );
+					console.log(activeArtworkSphere.material.color);
+					activeArtworkSphere.geometry.colorsNeedUpdate = true; 
+					this.props.setActiveArtwork(active_artwork_uuid); 
+				}
 
-			this.props.setActiveArtwork(active_artwork);
-			var originalColor = intersects[0].object.material.color;
-			intersects[0].object.material.color.set( 0xff0000 );
-			setTimeout(() => {
-				intersects[0].object.material.color.set( originalColor);
-			}, 1000);
+			}
 		}
+
+		if(activeArtworkSphere) activeArtworkSphere.material.color.set( 0xff0000 ); 
 
 		renderer.render( scene, camera );
 	}
@@ -184,8 +199,9 @@ class TwoDTest extends React.Component {
 	}
 
 	onClick(){
+		this.setState({ hoverWatch: !this.state.hoverWatch });
 	}
-
+ 
 
 	componentWillUnmount() {
 		this.mount.removeChild(this.mount.children[0]);
@@ -207,7 +223,10 @@ class TwoDTest extends React.Component {
 }
 
 function mapStateToProps(state){
-	return { artworks: state.artworks }
+	return {
+		artworks: state.artworks,
+		activeArtwork: state.activeArtwork ? state.artworks[state.activeArtwork] : null 
+	}
 }
 
 const mapDispatchToProps = { addObjRefToArtwork, setActiveArtwork, clearActiveArtwork };

@@ -69,11 +69,11 @@ app.get( "/*", async (req, res) => {
 		} catch (e){
 			console.log('data hydrate failure: ', e)
 		}
-		console.log('normal req', req.url)
+
 		let preloadedState = { artists, artworks, aaRelationships };
 		const store = configureStore(preloadedState);
 		const finalState = store.getState();
-		const app = renderToString(<AppRouter store={store} url={req.originalUrl} />); 
+		const app = renderToString(<AppRouter store={store} url={req.url} />); 
 		return res.status(200).send(renderHTMLwithInject(app, finalState))
 	}
 });

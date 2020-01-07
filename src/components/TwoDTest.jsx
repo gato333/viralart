@@ -151,14 +151,15 @@ class TwoDTest extends React.Component {
 			if(intersects.length > 0) {
 				var uuid = intersects[0].object.uuid;
 				var active_artwork_uuid = Object.keys(this.props.artworks).find( xid => this.props.artworks[xid].objRef == uuid );
-				if (activeArtworkSphereIndex <= -1 )
-					this.props.setActiveArtwork(active_artwork_uuid);
-				else if(activeArtworkSphereIndex > -1 && spheres[activeArtworkSphereIndex].uuid != uuid){
-					var colorHex = parseInt(this.props.activeArtwork.color.replace(/^#/, ''), 16);
-					spheres[activeArtworkSphereIndex].material.color.set( colorHex );
-					this.props.setActiveArtwork(active_artwork_uuid); 
+				if(active_artwork_uuid){
+					if (activeArtworkSphereIndex <= -1 )
+						this.props.setActiveArtwork(active_artwork_uuid);
+					else if(activeArtworkSphereIndex > -1 && spheres[activeArtworkSphereIndex].uuid != uuid){
+						var colorHex = parseInt(this.props.activeArtwork.color.replace(/^#/, ''), 16);
+						spheres[activeArtworkSphereIndex].material.color.set( colorHex );
+						this.props.setActiveArtwork(active_artwork_uuid); 
+					}
 				}
-
 			}
 		}
 

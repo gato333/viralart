@@ -54,6 +54,9 @@ babel-node data/addRelationsToExisting.js
 - transition to 3d obj mapping from the 2d tests
 
 ### To do: done
+- debugged server side rendering messing with html ( need to pass url to server side router )
+- implement color change on hover for tool tip 
+- implement tool tip
 - test out flat color mapping 
 - implement the orbital controls
 - implemented color gradiant for rainbow spectrum

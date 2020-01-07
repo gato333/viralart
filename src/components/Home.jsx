@@ -14,7 +14,7 @@ export default ({ match }) => (
 			<Route exact path={`${match.path}/2`} component={FlatTest} />
 			<Route exact path={`${match.path}/3`} component={TwoDTestPart1} />
 			<Route exact path={`${match.path}/4`} component={TwoDTest} />
-			<Route component={TwoDTest} />
+			<Route path="*" component={TwoDTest} />
  		</div>
  	</div>
 );

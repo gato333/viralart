@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Test</title>
+  <style>
+	.color {
+		content: '';
+		width: 50px; 
+		height: 50px;
+		border-radius: 5px;
+		margin-left: 10px; 
+		display:inline-block;
+	}
+	.block { display: inline-block; }
+	p { margin: 5px 0 5px 5px; }
+	.text { display: inline-block; vertical-align: top;}
+  </style>
+  
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+  	var root = document.getElementById('root');
+  	var colorList = new Array(100);
+  	for(var i =0; i< colorList.length; i++){
+  		colorList[i] = Math.random().toString(16).slice(2, 8);
+  	}
+
+  	colorList.sort( (a,b) => 
+  		(parseInt(a.slice(0,2), 16) + parseInt(a.slice(2,4), 16) + parseInt(a.slice(4,6), 16)) -
+  	 	(parseInt(b.slice(0,2), 16) + parseInt(b.slice(2,4), 16) + parseInt(b.slice(4,6), 16))
+  	);
+
+  	// vibrant color has a combined rgb number of 
+  	// greater then 200 
+  	// and less then 650 
+  	// skews heavily toward lighter colors 
+  	// be we should favor extreme dark < 200 over extreme light > 650 
+  	// rgb scale goes from 0 to 768
+  	// the rgb number we calculate is the hex number of red, green and blue individually and them summed 
+  	// normally thier rgb hex of the total number is very big, being a 6 digit hex number 
+  	// ranging from 0 to 16777215
+
+    for(var i = 0; i < 100; i++){
+    	var cssColor =  "#" + colorList[i];
+    	var newElm = document.createElement('div');
+    	newElm.className = "block"
+    	newElm.innerHTML = "<div class='color' style='background:" + cssColor + ";'></div><div class='text'><p>" + cssColor + "</p><p>" + (parseInt(colorList[i].slice(0,2), 16) + parseInt(colorList[i].slice(2,4), 16) + parseInt(colorList[i].slice(4,6), 16)) + "</p></div>";
+    	root.appendChild(newElm);
+    }
+  </script>
+</body>
+</html>

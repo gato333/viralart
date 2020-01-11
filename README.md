@@ -55,6 +55,8 @@ babel-node data/addRelationsToExisting.js
 - transition to 3d obj mapping from the 2d tests
 
 ### To do: done
+- update clarifai script to favor brighter coloers that arnt white or black
+- color test, to change clarifai script
 - debugged server side rendering messing with html ( need to pass url to server side router )
 - implement color change on hover for tool tip 
 - implement tool tip

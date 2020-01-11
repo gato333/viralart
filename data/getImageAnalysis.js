@@ -35,6 +35,16 @@ const empty = {
   concepts: null
 }
 
+function extractRGBDecimal(hex){
+  return {
+    r: parseInt(hex.slice(1, 3), 16),
+    g: parseInt(hex.slice(3, 5), 16),
+    b: parseInt(hex.slice(5, 7), 16)
+  }
+}
+
+function rgbSum (obj){ return obj.r + obj.b + obj.g };
+
 async function getImageAnalysis(image_url){
     if(!image_url) return empty;
     try {
@@ -47,14 +57,24 @@ async function getImageAnalysis(image_url){
   				var display_res = res[i];
       		if(display_res.model.name == 'color'){
       			display_res = display_res.data.colors;
-      			var primarycolor = display_res.reduce(function(prev, current) {
-    					return (prev.value > current.value) ? prev : current
-      			});
-      			analysisObj.primaryColor = { name: primarycolor.w3c.name, hex: primarycolor.raw_hex };
-      			analysisObj.secondaryColors = display_res.filter(function(x) {
-    					return x.value > 0.15 && x.raw_hex != primarycolor.raw_hex;
-      			}).map( function(x){ return x.w3c.hex }).join(', ');
-      		} else if(res[i].model.name.includes('celeb')){
+
+      			analysisObj.secondaryColors = display_res.sort( (a, b) => b.value - a.value );
+            analysisObj.primaryColor = analysisObj.secondaryColors.shift();
+            analysisObj.secondaryColors = analysisObj.secondaryColors
+              .filter( (x) =>  x.value > 0.09 )
+              .map( (x) => x.raw_hex ).join(',');
+
+            var possibleColors = [ analysisObj.primaryColor.raw_hex, ...analysisObj.secondaryColors.split(',') ];
+            analysisObj.betterColor = null; 
+
+            for(var i = 0; i < possibleColors.length && analysisObj.betterColor === null; i++){
+              var sum = rgbSum(extractRGBDecimal(possibleColors[i]));
+              if(sum >= 120 && sum <= 680) analysisObj.betterColor = possibleColors[i];
+            }
+            if(analysisObj.betterColor === null)
+              analysisObj.betterColor = analysisObj.primaryColor.raw_hex;
+            
+          } else if(res[i].model.name.includes('celeb')){
       			display_res = display_res.data.regions;
       			if(display_res) {
       				display_res = display_res[0].data.concepts;
@@ -81,7 +101,8 @@ async function getImageAnalysis(image_url){
         return analysisObj
       }
     } catch (error) {
-      console.log('Clarifai API error:', error.response.status,  error.response.statusText)
+      if(error && error.response) console.log('Clarifai API error:', error.response.status, error.response.statusText );
+      else console.log('Local error', error);
       console.log(image_url);
       return empty;
     }

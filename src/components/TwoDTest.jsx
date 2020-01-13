@@ -110,18 +110,22 @@ class TwoDTest extends React.Component {
 
 			var hsl;
 			var { h, s, l } = material.color.getHSL(hsl);
-			var yVal = l * 100 - 50; 
+			var yVal = l * 100 - 50;
+			//var yVal = l * s * 200 - 50;
+			if(yVal > 50) yVal -= 100;
+			if(yVal < -50) yVal += 100;
+			//				45				10
 			var initXVal = xVal; 
-			//console.log( i, xVal, yVal, spheres.map( x => [x.position.x, x.position.y] ));
-			for( var collisions = spheres.filter( x => x.position.x >= xVal - 6 && x.position.x <= xVal + 6 && x.position.y <= yVal + 6 && x.position.y >= yVal - 6);
+			for( var collisions = spheres.filter( x => x.position.x >= xVal - 5 && x.position.x <= xVal + 5 && x.position.y <= yVal + 5 && x.position.y >= yVal - 5);
 				collisions.length > 0;
+				collisions = spheres.filter( x => x.position.x >= xVal - 5 && x.position.x <= xVal + 5 && x.position.y <= yVal + 5 && x.position.y >= yVal - 5)
 			){
-				//console.log(xVal, yVal, collisions);
-				xVal = (((Math.max( ...collisions.map( x => x.position.x )) + 7) + 85) % 165) - 85
-				collisions = spheres.filter( x => x.position.x >= xVal - 6 && x.position.x <= xVal + 6 && x.position.y <= yVal + 6 && x.position.y >= yVal - 6);
-				if(xVal < initXVal && xVal >= initXVal - 6 ) yVal -= 6, xVal = initXVal; 
+				xVal = Math.max( ...collisions.map( x => x.position.x )) + 6;
+				if(xVal < initXVal && xVal >= initXVal - 6 ) yVal -= 6, xVal = initXVal;
+				if(xVal > 80) xVal -= 165;
+				if(yVal < -50) yVal += 100;
 			}
-			if(xVal > 80) xVal -= 165
+	
 			sphere.position.set(xVal, yVal, -117);
 			sphere.castShadow = true;
 			spheres.push(sphere);

@@ -50,11 +50,11 @@ babel-node data/addRelationsToExisting.js
 
 
 ## To do
-- perfect color map, wrapping and incorporating satruation aswell as lightness for mapping, we are doing only hue and lightness right now
-- update Clarifai script to favor brighter colors ( middle ranged hex numbers ), and black over white, do everything in our ability to avoid white being the prominent color in a piece
+- perfect color map incorporating satruation aswell as lightness for mapping, we are doing only hue and lightness right now
 - transition to 3d obj mapping from the 2d tests
 
 ### To do: done
+- fix wrapping of color map 
 - update clarifai script to favor brighter coloers that arnt white or black
 - color test, to change clarifai script
 - debugged server side rendering messing with html ( need to pass url to server side router )

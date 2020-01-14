@@ -11,10 +11,9 @@
   },
   "scripts": {
     "build": "rm -rf ./build; webpack; cp -a public/. build/;",
-    "webpack-watch": "rm -rf ./build; webpack --watch; cp -a public/. build/;",
-    "start": "node build/server.bundle.js",
+    "watch": "rm -rf ./build; webpack --watch; cp -a public/. build/;",
     "restart": "cp -a public/. build/; node build/server.bundle.js",
-    "pack-n-start": "rm -rf ./build; webpack; cp -a public/. build/; node build/server.bundle.js;"
+    "start": "rm -rf ./build; webpack; cp -a public/. build/; node build/server.bundle.js;"
   },
   "dependencies": {
     "@babel/core": "^7.7.2",

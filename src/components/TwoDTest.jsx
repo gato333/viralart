@@ -15,6 +15,7 @@ import {
 	Vector3,
 	Texture,
 	Raycaster,
+	Color,
 	Vector2 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { connect } from 'react-redux';
@@ -83,15 +84,14 @@ class TwoDTest extends React.Component {
 		}
 
 		var artworkMini = Object.keys(this.props.artworks).slice(0, 100);
-
 		for( var i = 0; i< artworkMini.length; i++ ){
-			var color = this.props.artworks[artworkMini[i]].color.replace(/^#/, '');
-			var r = parseInt(color.slice(0, 2), 16),
-				g = parseInt(color.slice(2, 4), 16),
-				b = parseInt(color.slice(4, 6), 16);
+			var colorString = this.props.artworks[artworkMini[i]].color.replace(/^#/, '');
+			var r = parseInt(colorString.slice(0, 2), 16),
+				g = parseInt(colorString.slice(2, 4), 16),
+				b = parseInt(colorString.slice(4, 6), 16);
 			var geometry = new SphereGeometry( 3, 32, 16 );
 			var material = new MeshPhysicalMaterial( {
-				color: parseInt(color, 16),
+				color: parseInt(colorString, 16),
 				roughness: 0.7,
 				transparency: 0.15,
 				flatShading: true,
@@ -100,21 +100,15 @@ class TwoDTest extends React.Component {
 			var sphere = new Mesh( geometry, material );
 			sphere.castShadow = true;
 			sphere.receiveShadow = true;
-			var max = Math.max(r, g, b);
-			// blue default
-			var xVal = xVal = ((r/255) * 60 ) + 120;
-			if(max == r) xVal = (g/255) * 60;
-			else if(max == g) xVal = ((b/255) * 60) + 60;
-			xVal -= 85; // offest for enviornment
-			//var yVal = -50; min val, max val = 50
-
 			var hsl;
 			var { h, s, l } = material.color.getHSL(hsl);
-			var yVal = l * 100 - 50;
 			//var yVal = l * s * 200 - 50;
-			if(yVal > 50) yVal -= 100;
-			if(yVal < -50) yVal += 100;
-			//				45				10
+			var yVal = l * 100 - 50;
+			// yVal range [ -50, 50 ]
+			if(s < .2) yVal = Math.min(yVal + (yVal > 0 ? 1 : -1) * ((.2 - s)/.2) * 20, 50);
+			var xVal = h * 170 - 85; 
+			// xVal range [ -85, 85 ]
+
 			var initXVal = xVal; 
 			for( var collisions = spheres.filter( x => x.position.x >= xVal - 5 && x.position.x <= xVal + 5 && x.position.y <= yVal + 5 && x.position.y >= yVal - 5);
 				collisions.length > 0;
@@ -122,7 +116,7 @@ class TwoDTest extends React.Component {
 			){
 				xVal = Math.max( ...collisions.map( x => x.position.x )) + 6;
 				if(xVal < initXVal && xVal >= initXVal - 6 ) yVal -= 6, xVal = initXVal;
-				if(xVal > 80) xVal -= 165;
+				if(xVal > 85) xVal -= 170;
 				if(yVal < -50) yVal += 100;
 			}
 	
@@ -175,7 +169,7 @@ class TwoDTest extends React.Component {
 		var width = 8;
 		var height = 64;
 		hex = hex.toString(16);
-		var color = "#" + ("000000".substr(0, 6 - hex.length) + hex);
+		var colorString = "#" + ("000000".substr(0, 6 - hex.length) + hex);
 
 		// create canvas
 		var canvas = document.createElement( 'canvas' );
@@ -189,8 +183,8 @@ class TwoDTest extends React.Component {
 		context.rect( 0, 0, width, height );
 		var gradient = context.createLinearGradient( 0, 0, width, height );
 		gradient.addColorStop(0, '#ffffff'); // white
-		gradient.addColorStop(.3, color);
-		gradient.addColorStop(.7, color);
+		gradient.addColorStop(.3, colorString);
+		gradient.addColorStop(.7, colorString);
 		gradient.addColorStop(1, '#000000'); // black
 		context.fillStyle = gradient;
 		context.fill();

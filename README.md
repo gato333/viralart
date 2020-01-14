@@ -16,14 +16,12 @@ a Node.JS/React/Redux app that represents art in a 3d graphical interface (d3.js
 	node data/init.js
 	```
 	to spin up local postgres database and tables for this app
-6. Next we need to compile the ES7 code, run in the terminal:
+6. Next we need to compile the ES7 code, copy the public folder into the build folder and run the compiled server. All these commandas can be executed with, in the terminal:
 	```
-	npm run webpack
+	npm run start
 	```
-	for debugging purposes use command ``` npm run webpack-watch ```
-	which will recompile on detection of any file change.
-7. Once that successfully compiles the files into something the browser can understand, in the terminal we run: ``` npm run start ``` 
-
+	for debugging purposes run the command ``` npm run watch ```
+	in another terminal window, this will recompile on detection of any file change.
 8. go to url `localhost:6660` in a web browers you'll see a home page explainging the api calls on this mini backend server
 
 

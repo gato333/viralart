@@ -48,10 +48,11 @@ babel-node data/addRelationsToExisting.js
 
 
 ## To do
-- perfect color map incorporating satruation aswell as lightness for mapping, we are doing only hue and lightness right now
 - transition to 3d obj mapping from the 2d tests
+- transition away from mapping to a sphere surface to more node like data mapping
 
 ### To do: done
+- perfect color map incorporating satruation aswell as lightness for mapping, we are doing only hue and lightness right now
 - fix wrapping of color map 
 - update clarifai script to favor brighter coloers that arnt white or black
 - color test, to change clarifai script

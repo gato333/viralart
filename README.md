@@ -48,10 +48,13 @@ babel-node data/addRelationsToExisting.js
 
 
 ## To do
+- implement cache from db on server, so we dont need repetive calls to get data
+- fix swapping out the three.js objs, probably have to investigate deleting more aggressivly
 - transition to 3d obj mapping from the 2d tests
 - transition away from mapping to a sphere surface to more node like data mapping
 
 ### To do: done
+- add OpenGL/Three.js waiting state
 - perfect color map incorporating satruation aswell as lightness for mapping, we are doing only hue and lightness right now
 - fix wrapping of color map 
 - update clarifai script to favor brighter coloers that arnt white or black

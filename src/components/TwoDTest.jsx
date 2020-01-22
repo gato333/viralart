@@ -136,7 +136,7 @@ class TwoDTest extends React.Component {
 
 
 	animate() {
-		requestAnimationFrame( this.animate );
+		this.lastRequest = requestAnimationFrame( this.animate );
 		controls.update();
 		var activeArtworkSphereIndex = this.props.activeArtwork ?
 			spheres.findIndex( sph => sph.uuid === this.props.activeArtwork.objRef ) : -1;
@@ -203,6 +203,8 @@ class TwoDTest extends React.Component {
 	}
 
 	componentWillUnmount() {
+		scene = null, camera = null, renderer = null, light = null, boxes = [], spheres = [], controls = null, raycaster = null;
+		cancelAnimationFrame(this.lastRequest);
 		this.mount.removeChild(this.mount.children[0]);
   	}
 

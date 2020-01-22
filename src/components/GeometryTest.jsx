@@ -71,11 +71,13 @@ class GeometryTest extends React.Component {
 	}
 
 	componentWillUnmount() {
+		scene = null, camera = null, renderer = null, light = null, sphere = null;
+		cancelAnimationFrame(this.lastRequest);
 		this.mount.removeChild(this.mount.children[0]);
   	}
 
 	animate(){
-		requestAnimationFrame( this.animate );
+		this.lastRequest = requestAnimationFrame( this.animate );
 		if(this.state.watchCursor) this.triggerRotation();
 		renderer.render( scene, camera );
 	}

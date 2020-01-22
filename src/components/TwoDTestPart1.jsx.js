@@ -140,6 +140,7 @@ class TwoDTestPart1 extends React.Component {
 
 
 	componentWillUnmount() {
+		scene = null, camera = null, renderer = null, light = null, boxes = [], spheres = [];
 		this.mount.removeChild(this.mount.children[0]);
   	}
 
